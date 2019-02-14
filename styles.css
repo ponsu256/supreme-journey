@@ -1,0 +1,221 @@
+header{
+  top: 10px;
+  left: 0;
+  right: 0;
+  background: white;
+  color: #000;
+  text-align: left;
+  margin-top: 0;
+}
+
+h1{
+  font-size: 20px;
+  line-height: 50px;
+  color: #555;
+  margin-top: 50px;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+body{
+  background: url(../img/main.jpg) no-repeat center center/cover;
+  font-size: 14px;
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  color: #fff;
+  margin-top: 40px;
+}
+
+.wrapper{
+  font-size: 14px;
+  line-height: 2.0;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 4%;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.heading{
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  font-family: Verdana, sans-serif;
+  margin-bottom: 20px;
+}
+
+.heading span{
+  border-bottom: 3px solid #000;
+  padding-bottom: 4px;
+}
+
+.heading span:hover{
+  color: blue;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  color: blue;
+}
+
+.btn{
+  display: block;
+  text-align: center;
+  width: 200px;
+  margin: 0 auto 60px;
+  border: 2px solid #000;
+  text-decoration: none;
+  padding: 13px 0 12px;
+  font-weight: bold;
+  color: #000;
+}
+
+.myPort > h1{
+  text-align: center;
+  font-family: 'Bangers', cursive;
+  font-size: 35px;
+  color: #000;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'IM Fell DW Pica SC', serif;
+  color: #444;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10;
+}
+
+#menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  display: none;
+}
+
+#menu.shown{
+  display: block;
+}
+
+#menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+#menu li{
+  line-height: 2;
+}
+
+#menu a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#open_menu{
+  float: right;
+  font-size: 32px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#close_menu{
+  padding: 15px;
+  float: right;
+  cursor: pointer;
+}
+
+footer{
+  background: white;
+  line-height: 70px;
+  color: #ccc;
+  text-align: center;
+}
+
+
+/* pc screen */
+
+/* 570pxより大きくなったら変更してね */
+
+
+@media (min-width: 570px){
+
+ul{
+  font-size: 16px;
+}
+
+li:hover{
+  color: blue;
+}
+
+header{
+  line-height: 70px;
+}
+h1{
+  font-size: 30px;
+  line-height: 100px;
+  margin-top: 30px;
+}
+
+h2 {
+  font-size: 28px;
+  /* text-align: left; */
+  margin-top: 0;
+}
+
+.wrapper{
+  font-size: 16px;
+
+  /* padding-left: 0;
+  padding-right: 0; */
+  /* margin: 0; */
+  /* margin-bottom: 50px; */
+  /* text-align: left; */
+}
+
+body{
+  margin-top: 100px;
+}
+
+.myPort > h1{
+  font-size: 50px;
+
+}
+
+  #open_menu{
+    display: none;
+  }
+  #close_menu{
+    display: none;
+  }
+
+  #menu{
+    display: block;
+    position: static;
+    background: transparent;
+    color: #333;
+  }
+  #menu ul{
+    padding: 0;
+    float: right;
+  }
+  #menu li{
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+  }
+
+
+}
