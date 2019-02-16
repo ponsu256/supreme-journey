@@ -26,7 +26,7 @@ body{
   font-size: 14px;
   font-family: Verdana, sans-serif;
   margin: 0;
-  color: #red;
+  color: red;
   margin-top: 40px;
 }
 
@@ -50,7 +50,7 @@ body{
 }
 
 .heading span{
-  border-bottom: 3px solid #000;
+  border-bottom: 3px solid #fff;
   padding-bottom: 4px;
 }
 
@@ -82,7 +82,7 @@ a:hover{
   text-align: center;
   font-family: 'Bangers', cursive;
   font-size: 35px;
-  color: #red;
+  color: red;
   margin-bottom: 0;
 }
 
