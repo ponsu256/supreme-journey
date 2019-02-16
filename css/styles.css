@@ -11,7 +11,7 @@ header{
 h1{
   font-size: 20px;
   line-height: 50px;
-  color: #333;
+  color: #555;
   margin-top: 50px;
 }
 
@@ -82,13 +82,13 @@ a:hover{
   text-align: center;
   font-family: 'Bangers', cursive;
   font-size: 35px;
-  color: red;
+  color: #FF6F61;
   margin-bottom: 0;
 }
 
 h2 {
   font-family: 'IM Fell DW Pica SC', serif;
-  color: #FF6F61;
+  color: #dcd0c0;
   text-align: center;
   font-weight: bold;
   font-size: 20px;
