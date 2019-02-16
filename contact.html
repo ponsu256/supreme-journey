@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>Contact｜ポンスのPortfolio</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="css/contact.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<header>
+  <div class="container">
+    <i id="open_menu" class="fas fa-bars"></i>
+    <!-- <nav id="menu" class="shown"> -->
+    <nav id="menu">
+
+      <i id="close_menu" class="fas fa-times"></i>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Contact</h1>
+  </div>
+</header>
+<body>
+  <div class="container">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfL-D91wHzU_GRDctVa5FC57TV5Jcgfy0BQLJtnR0_Y6z6ymA/viewform?embedded=true" width="640" height="870" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
+  </div>
+  <script>
+    (function(){
+      'use strict';
+      let openMenu = document.getElementById('open_menu');
+      let closeMenu = document.getElementById('close_menu');
+      let menu = document.getElementById('menu');
+      openMenu.addEventListener('click', function(){
+        menu.classList.add('shown')
+      });
+      closeMenu.addEventListener('click', function(){
+        menu.classList.remove('shown')
+      });
+    })();
+
+
+  </script>
+</body>
+<footer>
+  &copy; ponsu.com
+</footer>
+</html>
