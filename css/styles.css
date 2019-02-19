@@ -34,13 +34,13 @@ div.title-area {
 div.a{
   background-color: #872226;
   background-color: #faebd7;
-  font-size: 20px;
+  font-size: 30px;
   position:relative;
 }
 div.b{
   background-color: #d5848b;
   grid-row: span 2;
-  font-size: 20px;
+  font-size: 30px;
   position:relative;
 }
 div.c{
@@ -56,13 +56,13 @@ div.d{
 div.e{
   background-color: #b80117;
   grid-row: span 2;
-  font-size: 20px;
+  font-size: 30px;
   position:relative;
 }
 div.f{
   background-color: #d06d8c;
   background-color: #ffb6c1;
-  font-size: 20px;
+  font-size: 30px;
   position:relative;
 }
 div.g{
