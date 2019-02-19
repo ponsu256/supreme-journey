@@ -3,7 +3,7 @@
 
 body{
   font-size: 15px;
-  font-family: 'Hannotate SC','Comic Sans MS','cursive','Hannotate TC','MS UI Gothic',sans-serif;
+  font-family: 'Hannotate SC','Comic Sans MS','Chalkduster','cursive','Hannotate TC','MS UI Gothic',sans-serif;
 }
 
 header{
@@ -48,7 +48,7 @@ footer{
   padding-top: 50px;
   padding-bottom: 30px;
   color: #fff;
-  font-family: 'Comic Sans MS',cursive,fantasy;
+  font-family: 'Comic Sans MS','Chalkduster',cursive,fantasy;
 }
 
 .foot{
