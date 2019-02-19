@@ -1,0 +1,78 @@
+/* 冒頭でimport */
+@import url(https://fonts.googleapis.com/earlyaccess/nikukyu.css);
+
+
+header{
+  background-color: #FFCC00;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  /* フォントを指定したいところで */
+  font-family: 'Nikukyu';
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+body{
+  font-size: 16px;
+  font-family: 'Hannotate SC','Hannotate TC','MS UI Gothic',sans-serif;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.container{
+  max-width: 710px;
+  margin: 0 auto;
+  padding: 0 4%;
+  margin-bottom: 0;
+
+}
+
+
+
+
+
+footer{
+  background-color: #FFCC00;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  color: #fff;
+}
+
+.foot{
+  color: blue;
+}
+
+/* pc screen */
+
+/* 570pxより大きくなったら変更してね */
+
+
+@media (min-width: 570px){
+
+
+header{
+  line-height: 70px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+footer{
+  background-color: #FFCC00;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.foot{
+  color: blue;
+}
+
+}
