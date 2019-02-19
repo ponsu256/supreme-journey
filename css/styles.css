@@ -34,13 +34,13 @@ div.title-area {
 div.a{
   background-color: #872226;
   background-color: #faebd7;
-  font-size: 30px;
+  font-size: 25px;
   position:relative;
 }
 div.b{
   background-color: #d5848b;
   grid-row: span 2;
-  font-size: 30px;
+  font-size: 25px;
   position:relative;
 }
 div.c{
@@ -56,19 +56,19 @@ div.d{
 div.e{
   background-color: #b80117;
   grid-row: span 2;
-  font-size: 30px;
+  font-size: 25px;
   position:relative;
 }
 div.f{
   background-color: #d06d8c;
   background-color: #ffb6c1;
-  font-size: 30px;
+  font-size: 25px;
   position:relative;
 }
 div.g{
   background-color: #c93a40;
   position:relative;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .a .Link,
@@ -239,6 +239,7 @@ footer{
   padding-bottom: 30px;
   color: #fff;
   font-family: 'Comic Sans MS','Chalkduster',cursive,fantasy;
+  font-size: 15px;
 }
 
 .foot{
