@@ -1,221 +1,273 @@
-header{
-  top: 10px;
-  left: 0;
-  right: 0;
-  background: white;
-  color: #000;
-  text-align: left;
-  margin-top: 0;
-}
-
-h1{
-  font-size: 20px;
-  line-height: 50px;
-  color: #555;
-  margin-top: 50px;
-}
-
-.container{
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 0 4%;
-}
+/* 冒頭でimport */
+@import url(https://fonts.googleapis.com/earlyaccess/nikukyu.css);
 
 body{
-  background: url(../img/d.jpg) no-repeat center center/cover;
-  font-size: 14px;
-  font-family: Verdana, sans-serif;
-  margin: 0;
-  color: #fff;
-  margin-top: 40px;
+  font-family: 'Hannotate SC','Hannotate TC','MS UI Gothic',sans-serif;
 }
 
-.wrapper{
-  font-size: 14px;
-  line-height: 2.0;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 0 4%;
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
 
-.heading{
+div.blog-area {
+  display: grid;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 50vw 50vw;
+}
+div.title-area {
+  /* 列方向に2マス分占有することを指定している。指定しない場合は1マスとなる。 */
+  grid-column: span 2;
+  grid-row: span 2;
+  /* border:solid 5px #fff;
+  border-radius: 30px; */
+  background-color: #fff353;
+  background-color: #FFFF80;
+  /* フォントを指定したいところで */
+  font-family: 'Nikukyu';
+  font-size: 60px;
   text-align: center;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff;
-  font-family: Verdana, sans-serif;
-  margin-bottom: 20px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
-.heading span{
-  border-bottom: 3px solid #fff;
-  padding-bottom: 4px;
-}
-
-.heading span:hover{
-  color: blue;
-}
-
-a{
-  text-decoration: none;
-}
-
-a:hover{
-  color: blue;
-}
-
-.btn{
-  display: block;
-  text-align: center;
-  width: 200px;
-  margin: 0 auto 60px;
-  border: 2px solid #fff;
-  text-decoration: none;
-  padding: 13px 0 12px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.myPort > h1{
-  text-align: center;
-  font-family: 'Bangers', cursive;
-  font-size: 35px;
-  color: #FF6F61;
-  margin-bottom: 0;
-}
-
-h2 {
-  font-family: 'IM Fell DW Pica SC', serif;
-  color: #dcd0c0;
-  text-align: center;
-  font-weight: bold;
+div.a{
+  background-color: #872226;
+  background-color: #faebd7;
   font-size: 20px;
-  margin-top: 10;
+  position:relative;
+}
+div.b{
+  background-color: #d5848b;
+  grid-row: span 2;
+  font-size: 20px;
+  position:relative;
+}
+div.c{
+  background-color: #cb5393;
+  background: url(../img/flower1.jpg) no-repeat center center/cover;
+}
+div.d{
+  background-color: #f2dae8;
+  grid-column: span 2;
+  background: url(../img/dog1.jpg) no-repeat center center/cover;
+  opacity: 0.9;
+}
+div.e{
+  background-color: #b80117;
+  grid-row: span 2;
+  font-size: 20px;
+  position:relative;
+}
+div.f{
+  background-color: #d06d8c;
+  background-color: #ffb6c1;
+  font-size: 20px;
+  position:relative;
+}
+div.g{
+  background-color: #c93a40;
+  position:relative;
+  font-size: 30px;
 }
 
-#menu{
+.a .Link,
+.b .Link,
+.e .Link,
+.f .Link,
+.g .Link {
+  display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+div.a,
+div.b,
+div.c,
+div.d,
+div.e,
+div.f,
+div.g{
+  /* border:solid 1px #fff; */
+  /* border-radius: 30px; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.a:hover,
+.b:hover,
+/* .c:hover, */
+/* .d:hover, */
+.e:hover,
+.f:hover,
+.g:hover{
+  cursor: pointer;
+  transform: translate(-5px,-5px);
+  box-shadow: 2px 2px 20px #555;
+  background-color: #0074bf;
+  opacity: 0.5;
+}
+
+.blog-title{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+h2 > span{
+  border-bottom: 3px solid #000;
+  padding-bottom: 5px;
+  color: #0168b3;
+  font-family: 'Comic Sans MS',cursive,fantasy;
+  font-size: 30px;
+}
+p > span{
+  color: #0168b3;
+  font-family: 'Nikukyu',源柔ゴシック;
+  font-size: 30px;
+}
+.blog{
+  border:solid 1px black;
+  position:relative;
+}
+.blog .Link{
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  display: none;
+  width: 100%;
+  height: 100%;
+}
+img{
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
 }
 
-#menu.shown{
-  display: block;
+.blog-contents{
+  opacity: 0.6;
+  margin: 0 auto;
+  max-width: 1086px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-#menu ul{
-  list-style: none;
-  margin: 0;
-  padding: 10px 20px;
+.blog-contents in{
+  opacity: 1;
+  animation: slideUp 1000ms;
 }
 
-#menu li{
-  line-height: 2;
+.blog{
+  /* width: 342px; */
+  width: 250px;
+  height: 300px;
+  background: #fff;
+  padding: 16px 16px 28px;
+  margin: 0 10px 20px;
+  transition: 300ms ease;
+  /* width: calc((100%-140px-60px)/3) */
 }
 
-#menu a{
-  text-decoration: none;
-  color: inherit;
+.blog h4{
+  margin-top: 26px;
+  margin-bottom: 20px;
+  line-height: 26px;
 }
 
-#open_menu{
-  float: right;
-  font-size: 32px;
+.blog p{
+  line-height: 24px;
+}
+
+.blog:hover{
   cursor: pointer;
-  margin-top: 10px;
+  transform: translate(-5px,-5px);
+  box-shadow: 2px 2px 20px #555;
 }
 
-#close_menu{
-  padding: 15px;
-  float: right;
-  cursor: pointer;
+.pager {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.pager ul {
+    list-style: none;
+    /* background: #eee; */
+    position: relative;
+    left: 50%;
+    float: left;
+}
+
+/* li要素の配置方法も相対位置にします */
+.pager ul li {
+    position: relative;
+    left: -50%;
+    float: left;
+    margin: 0 1px;
+    font-family: 'Hannotate SC','Hannotate TC','MS UI Gothic',sans-serif;
+}
+
+.pager ul li span,
+.pager ul li a {
+    display: block;
+    font-size: 16px;
+    padding: 1em 1em;
+    border-radius: 6px;
+}
+.pager ul li a {
+    background: red;
+    color: #fff;
+    text-decoration: none;
+}
+.pager ul li a:hover {
+    background: #333;
+    color: #FFCC00;
 }
 
 footer{
-  background: white;
-  line-height: 70px;
-  color: #ccc;
+  background-color: #FFCC00;
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #fff;
 }
 
-
-/* pc screen */
-
-/* 570pxより大きくなったら変更してね */
-
-
-@media (min-width: 570px){
-
-ul{
-  font-size: 16px;
-}
-
-li:hover{
+.foot{
   color: blue;
 }
 
-header{
-  line-height: 70px;
-}
-h1{
-  font-size: 30px;
-  line-height: 100px;
-  margin-top: 30px;
-}
 
-h2 {
-  font-size: 28px;
-  /* text-align: left; */
-  margin-top: 0;
-}
 
-.wrapper{
-  font-size: 16px;
-
-  /* padding-left: 0;
-  padding-right: 0; */
-  /* margin: 0; */
-  /* margin-bottom: 50px; */
-  /* text-align: left; */
-}
-
-body{
-  margin-top: 100px;
-}
-
-.myPort > h1{
-  font-size: 50px;
-
-}
-
-  #open_menu{
-    display: none;
-  }
-  #close_menu{
-    display: none;
+@media (min-width: 800px){
+  div.title-area {
+    font-size: 80px;
   }
 
-  #menu{
-    display: block;
-    position: static;
-    background: transparent;
-    color: #333;
-  }
-  #menu ul{
-    padding: 0;
-    float: right;
-  }
-  #menu li{
-    display: inline-block;
-    width: 90px;
-    text-align: center;
+}
+
+@media (min-width: 40em) {
+  div.blog-area {
+    /* 要素内部がgrid layoutであることを示す */
+    display: grid;
+    /* gridの行分割の高さをそれぞれ指定している。今回は4行。 */
+    grid-template-rows:220px 220px 220px;
+    /* gridの列分割の幅をそれぞれ指定している。今回は2列。 */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* 黒い線で要素を囲む */
+    /* border:solid 1px black; */
   }
 
-
+  footer{
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
 }
