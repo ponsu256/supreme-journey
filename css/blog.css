@@ -13,8 +13,8 @@ header{
   color: #000;
 }
 body{
-  font-size: 16px;
-  font-family: 'Hannotate SC','Comic Sans MS','cursive','Hannotate TC','MS UI Gothic',sans-serif;
+  font-size: 15px;
+  font-family: 'Hannotate SC','Comic Sans MS','Chalkduster','cursive','Hannotate TC','MS UI Gothic',sans-serif;
   color: #000;
   margin-bottom: 0;
 }
@@ -39,7 +39,7 @@ footer{
   padding-top: 10px;
   padding-bottom: 70px;
   color: #fff;
-  font-family: 'Comic Sans MS',cursive,fantasy;
+  font-family: 'Comic Sans MS','Chalkduster',cursive,fantasy;
 }
 
 .foot{
