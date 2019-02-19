@@ -100,7 +100,9 @@ div.g{
   color: #fff;
   padding-top: 10px;
   padding-bottom: 10px;
-
+}
+div.a{
+  color: #000;
 }
 
 .a:hover,
