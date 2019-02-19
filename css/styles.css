@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/earlyaccess/nikukyu.css);
 
 body{
-  font-family: 'HG創英角ポップ体','Hannotate SC','Comic Sans MS',cursive,fantasy,sans-serif;
+  font-family: 'HG創英角ポップ体','Hannotate SC','Comic Sans MS','Chalkduster',cursive,fantasy,sans-serif;
 }
 
 
@@ -126,7 +126,7 @@ h2 > span{
   border-bottom: 3px solid #000;
   padding-bottom: 5px;
   color: #0168b3;
-  font-family: 'Comic Sans MS',cursive,fantasy;
+  font-family: 'Comic Sans MS','Chalkduster',cursive,fantasy;
   font-size: 30px;
 }
 p > span{
@@ -238,7 +238,7 @@ footer{
   padding-top: 50px;
   padding-bottom: 30px;
   color: #fff;
-  font-family: 'Comic Sans MS',cursive,fantasy;
+  font-family: 'Comic Sans MS','Chalkduster',cursive,fantasy;
 }
 
 .foot{
