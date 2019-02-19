@@ -13,72 +13,79 @@
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <i id="open_menu" class="fas fa-bars"></i>
-      <!-- <nav id="menu" class="shown"> -->
-      <nav id="menu">
-
-        <i id="close_menu" class="fas fa-times"></i>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <h1>Home</h1>
+    <header>
+    </header>
+    <div class="blog-area">
+      <div class="title-area">ポンスノ<br>ブログ</div>
+        <div class="a">カテゴリ1<a class ="Link" href="category_1.html"></a></div>
+        <div class="b">カテゴリ2<a class ="Link" href="category_2.html"></a></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e">カテゴリ3<a class ="Link" href="category_3.html"></a></div>
+        <div class="f">カテゴリ4<a class ="Link" href="category_4.html"></a></div>
+        <div class="g">Contact<a class ="Link" href="contact.html" target="_blank"></a></div>
     </div>
-  </header>
 
-  <main>
-    <section class="myPort">
-      <h1>Ponsu's WEB</h1>
-      <div class="container">
-      <h2>Test Test Test Test TestTest Test Test Test Test Test Test Test T</h2>
+    <div id="blog-sec" class="blog-section">
+      <div class="blog-title">
+      <h2><span><b>&nbsp;&nbsp;New&nbsp;&nbsp;</b></span></h2>
+      <p><span>ブログ</span></p>
 
-    <div class="wrapper">
-      Test Test Test Test TestTest Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test 
+      </div>
+      <div class="blog-contents">
+        <div class="blog">
+          <img src="img/dack.jpg" alt="blogイメージ">
+          <h4>タイトルタイトル</h4>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <a class ="Link" href="blog/blog.html"></a>
+        </div>
+        <div class="blog">
+          <img src="img/dack.jpg" alt="blogイメージ">
+          <h4>タイトルタイトル</h4>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <a class ="Link" href="blog/blog.html"></a>
+        </div>
+        <div class="blog">
+          <img src="img/dack.jpg" alt="blogイメージ">
+          <h4>タイトルタイトル</h4>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <a class ="Link" href="blog/blog.html"></a>
+        </div>
+        <div class="blog">
+          <img src="img/dack.jpg" alt="blogイメージ">
+          <h4>タイトルタイトル</h4>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <a class ="Link" href="blog/blog.html"></a>
+        </div>
+        <div class="blog">
+          <img src="img/dack.jpg" alt="blogイメージ">
+          <h4>タイトルタイトル</h4>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <a class ="Link" href="blog/blog.html"></a>
+        </div>
+        <div class="blog">
+          <img src="img/メンフクロウ.jpg" alt="blogイメージ">
+          <h4>タイトルタイトル</h4>
+          <p>テキストテキストテキストテキストテキストテキストテキストテキスト</p>
+          <a class ="Link" href="blog/blog.html"></a>
+        </div>
+      </div>
     </div>
+    <div class="pager">
+    <ul>
+        <li><a href="#">前へ</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li class="current"><span>3</span></li>
+        <!-- <li><a href="#">4</a></li> -->
+        <li><span>...</span></li>
+        <li><a href="#">30</a></li>
+        <li><a href="#">次へ</a></li>
+    </ul>
     </div>
-    </section>
-    <section>
-    <a href="about.html">
-      <h2 class="heading"><span>ABOUT</span></h2>
-    </a>
-    </section>
-    <section>
-    <a href="blog.html">
-      <h2 class="heading"><span>BLOG</span></h2>
-    </a>
-    </section>
-    <section>
-    <a href="contact.html" class="btn">
-      お問い合わせはこちら
-    </a>
-    </section>
-  </main>
-
-  <footer>
-    &copy; ponsu.tech
-  </footer>
-
-  <script>
-    (function(){
-      'use strict';
-      let openMenu = document.getElementById('open_menu');
-      let closeMenu = document.getElementById('close_menu');
-      let menu = document.getElementById('menu');
-      openMenu.addEventListener('click', function(){
-        menu.classList.add('shown')
-      });
-      closeMenu.addEventListener('click', function(){
-        menu.classList.remove('shown')
-      });
-    })();
-  </script>
-  <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c68353001910e2f"></script>
-  
-</body>
-
+    <footer>
+      ©Copyright2019<br> <span class="foot"><strong>ponsu.tech</strong></span> All Rights Reserved.
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
 </html>
