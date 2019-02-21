@@ -1,2 +1,181 @@
 /* 冒頭でimport */
 @import url(https://fonts.googleapis.com/earlyaccess/nikukyu.css);
+
+/* フロートで浮かせない為に */
+.clearfix:after{
+  content:"";
+  display: block;
+  clear: both;
+}
+#category .blog-list li{
+  float: left;
+  list-style: none;
+  margin: 0 20px 15px 0
+}
+#category .blog-list li:nth-child(3n){
+  margin-right: 0;
+}
+
+#first{
+  margin-bottom: 100px;
+}
+
+header{
+  background-color: #FFCC00;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  /* フォントを指定したいところで */
+  font-family: 'Nikukyu';
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.breadcrumb{
+  list-style: none;
+  /* border: 1px solid #b3b3b3; */
+  padding: 3px 20px;
+  border-radius: 5px;
+  /* background-color: #ececec; */
+  font-size: 14px;
+}
+
+.breadcrumb a{
+  color: #FA5700;
+}
+.breadcrumb a:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.breadcrumb li{
+  display: inline-block;
+}
+
+.breadcrumb li::after{
+  content: ">>";
+  padding: 0 5px;
+  color: #b3b3b3;
+}
+
+.breadcrumb li:last-child::after{
+  content: none;
+}
+
+footer{
+  background-color: #FFCC00;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  color: #fff;
+  font-family: 'Comic Sans MS','Chalkduster',cursive,fantasy;
+}
+
+.foot{
+  color: blue;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  padding: 30px;
+  background-color: #f6f7fb;
+  color: #333;
+  font-size: 1.2rem;
+  font-family: 'Hiragino Kaku Gothic ProN',sans-serif;
+}
+
+.container{
+  max-width: 1000px;
+  display: grid;
+  margin: 0 auto;
+  /* text-align: center; */
+  justify-content: center;
+  /* align-items: center; */
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active{
+  color: #7c5119;
+  text-decoration: none;
+}
+
+.item{
+  width: 180px;
+  height: 250px;
+  margin-bottom: 4px;
+  padding: 8px;
+  border-bottom: 3px solid;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.item .image{
+  display: block;
+  width: 100%;
+}
+
+.item .category{
+  margin: 15px 9px 10px;
+  color: #aaa;
+  letter-spacing: 1px;
+  font-family: "Trebuchet MS",'Hiragino Kaku Gothic ProN',sans-serif;
+}
+.item .discription{
+  margin: 10px;
+  line-height: 1.5;
+}
+
+.item > a{
+  display: block;
+  margin: -8px -8px -11px;
+  padding: 8px 8px 11px;
+  border-radius: inherit;
+  color: #777;
+  transition: all 0.3s;
+}
+
+.item > a:hover{
+  box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3);
+  opacity: 0.8;
+}
+
+/* 画面サイズが500以下の場合に適応する */
+@media screen and (max-width: 500px){
+
+  body{
+    padding: 0;
+  }
+
+}
+
+@media (min-width: 570px){
+
+
+header{
+  line-height: 70px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+footer{
+  background-color: #FFCC00;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.foot{
+  color: blue;
+}
