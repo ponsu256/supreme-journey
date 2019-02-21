@@ -154,7 +154,7 @@ a:link, a:visited, a:hover, a:active{
   }
   .grid{
     width: 150px;
-    column-width: 150px;
+    column-width: 100px;
   }
 
 }
