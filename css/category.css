@@ -152,6 +152,10 @@ a:link, a:visited, a:hover, a:active{
   body{
     padding: 0;
   }
+  .grid{
+    width: 150px;
+    column-width: 150px;
+  }
 
 }
 
