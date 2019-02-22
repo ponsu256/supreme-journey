@@ -278,7 +278,7 @@ footer{
 }
 
 .grid-item {
-  height: 270px;
+  height: 250px;
   float: left;
   background: #fff;
   border: 2px solid #333;
@@ -289,9 +289,9 @@ footer{
 .grid-item--width2 { width:  50%; }
 .grid-item--width3 { width:  50%; }
 
-.grid-item--height2 { height: 270px; }
-.grid-item--height3 { height: 270px; }
-.grid-item--height4 { height: 270px; }
+.grid-item--height2 { height: 250px; }
+.grid-item--height3 { height: 250px; }
+.grid-item--height4 { height: 250px; }
 
 .grid-item .image{
   display: block;
