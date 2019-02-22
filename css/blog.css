@@ -12,23 +12,87 @@ header{
   text-align: center;
   color: #000;
 }
+
+.breadcrumb{
+  list-style: none;
+  /* border: 1px solid #b3b3b3; */
+  padding: 3px 20px;
+  border-radius: 5px;
+  /* background-color: #ececec; */
+  font-size: 14px;
+}
+.breadcrumb a{
+  /* color: #FA5700; */
+  color: #7c5119;
+  text-decoration: none;
+}
+.breadcrumb a:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.breadcrumb li{
+  display: inline-block;
+}
+
+.breadcrumb li::after{
+  content: ">>";
+  padding: 0 5px;
+  color: #b3b3b3;
+}
+
+.breadcrumb li:last-child::after{
+  content: none;
+}
 body{
   font-size: 15px;
   font-family: 'Hannotate SC','Comic Sans MS','Chalkduster','cursive','Hannotate TC','MS UI Gothic',sans-serif;
   color: #000;
   margin-bottom: 0;
+  margin: 0;
 }
 
-.container{
-  max-width: 710px;
-  margin: 0 auto;
-  padding: 0 4%;
-  margin-bottom: 0;
-
+.subtitle{
+  display: block;
+  padding-top: 5px;
+  border-top: 1px dashed #3b98b6;
+  font-size: 15px;
+  font-weight: normal;
+  color: #3b98b6;
+}
+p > strong{
+  font-weight: normal;
+  background: linear-gradient(transparent 55%,#fafa00 55%,#fafa00 100%);
 }
 
+img{
+  width: 360px;
+  height: 200px;
+}
+.content{
+  overflow: hidden;
+}
+.main{
+  width: 700px;
+  margin: 0 10px;
+  float: left;
+  margin-left: 30px;
+}
 
+.sidebar{
+  width: 200px;
+  margin: 0 10px 0 30px;
+  float: right;
+  margin-top: 100px;
+}
 
+li >a:hover{
+  color: blue;
+}
+
+article{
+  margin-bottom: 30px;
+}
 
 
 footer{
@@ -67,7 +131,7 @@ footer{
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 30px;
   color: #fff;
 }
@@ -77,3 +141,66 @@ footer{
 }
 
 }
+
+/* 画面サイズが600以下の場合に適応する */
+@media screen and (max-width: 600px){
+
+body{
+  font-size: 3.5vw;
+}
+header{
+  width: auto;
+  margin: 0;
+}
+/* .logo{
+  float: none;
+  margin-top: 60px;
+  text-align: center;
+}
+.global-nav{
+  float: none;
+  margin-top: 40px;
+  text-align: center;
+}
+.global-nav li{
+  display: inline;
+  float: none;
+  margin: 0 8px;
+} */
+/* #wrap{
+  margin-top: 40px;
+  padding: 35px 0 0;
+} */
+
+.content{
+  width: 100%;
+}
+.main{
+  float: none;
+  width: auto;
+  margin: 0 5%;
+}
+
+h1{
+  font-size: 7.2vw;
+}
+
+h2{
+  font-size: 6vw;
+}
+
+h2 img{
+  max-width: 100%;
+}
+.sidebar{
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 30px 20px 20px;
+  background-color: #f7f6f4;
+}
+
+
+
+}
+
