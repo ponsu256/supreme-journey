@@ -195,43 +195,6 @@ img{
   box-shadow: 2px 2px 20px #555;
 }
 
-.pager {
-    overflow: hidden;
-    margin-bottom: 30px;
-}
-.pager ul {
-    list-style: none;
-    /* background: #eee; */
-    position: relative;
-    left: 50%;
-    float: left;
-    padding-left: 0;
-}
-
-/* li要素の配置方法も相対位置にします */
-.pager ul li {
-    position: relative;
-    left: -50%;
-    float: left;
-    margin: 0 1px;
-}
-
-.pager ul li span,
-.pager ul li a {
-    display: block;
-    font-size: 14px;
-    padding: 1em 1em;
-    border-radius: 6px;
-}
-.pager ul li a {
-    background: red;
-    color: #fff;
-    text-decoration: none;
-}
-.pager ul li a:hover {
-    background: #333;
-    color: #FFCC00;
-}
 
 footer{
   background-color: #FFCC00;
