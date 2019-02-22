@@ -54,6 +54,20 @@ footer{
   color: blue;
 }
 
+@media screen and (max-width: 600px){
+
+  body{
+    padding: 0;
+    font-size: 3.5vw;
+  }
+    h1{
+    font-size: 7.2vw;
+  }
+
+  h2{
+    font-size: 6vw;
+  }
+
 /* pc screen */
 
 /* 570pxより大きくなったら変更してね */
