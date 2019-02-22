@@ -204,7 +204,7 @@ a:link, a:visited, a:hover, a:active{
 .grid-item .image{
   display: block;
   width: 100%;
-  height: 150px;
+  height: 110px;
 }
   
 .grid-item:last-child{
