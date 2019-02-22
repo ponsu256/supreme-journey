@@ -197,6 +197,7 @@ a:link, a:visited, a:hover, a:active{
     overflow: hidden;
     margin-bottom: 10px;
     margin-top: 30px;
+    font-family: 'HG創英角ポップ体','Hannotate SC','Comic Sans MS','Chalkduster',cursive,fantasy,sans-serif;
 }
 .pager ul {
     list-style: none;
@@ -221,7 +222,7 @@ a:link, a:visited, a:hover, a:active{
 .pager ul li span,
 .pager ul li a {
     display: block;
-    font-size: 14px;
+    font-size: 13px;
     padding: 1em 1em;
     border-radius: 6px;
 }
