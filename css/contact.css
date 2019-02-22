@@ -21,7 +21,7 @@ body{
   background-size: contain;
   font-family: Verdana, sans-serif;
   color: #fff;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .container{
@@ -43,8 +43,7 @@ body{
 footer{
   background-color: #FFCC00;
   text-align: center;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   padding-top: 50px;
   padding-bottom: 30px;
   color: #fff;
@@ -76,9 +75,10 @@ footer{
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 30px;
   color: #fff;
+  font-size: 15px;
 }
 
 .foot{
