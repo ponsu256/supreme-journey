@@ -144,6 +144,10 @@ footer{
 
 /* 画面サイズが600以下の場合に適応する */
 @media screen and (max-width: 600px){
+  
+    .breadcrumb{
+    padding: 3px 0;
+  }
 
 body{
   font-size: 3.5vw;
