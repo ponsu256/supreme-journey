@@ -186,7 +186,7 @@ a:link, a:visited, a:hover, a:active{
 }
 
 .grid-item {
-  height: 300px;
+  height: 270px;
   float: left;
   background: #D26;
   border: 2px solid #333;
@@ -197,9 +197,9 @@ a:link, a:visited, a:hover, a:active{
 .grid-item--width2 { width:  50%; }
 .grid-item--width3 { width:  50%; }
 
-.grid-item--height2 { height: 300px; }
-.grid-item--height3 { height: 300px; }
-.grid-item--height4 { height: 300px; }
+.grid-item--height2 { height: 270px; }
+.grid-item--height3 { height: 270px; }
+.grid-item--height4 { height: 270px; }
 
 .grid-item .image{
   display: block;
