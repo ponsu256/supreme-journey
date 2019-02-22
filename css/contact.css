@@ -2,8 +2,12 @@
 @import url(https://fonts.googleapis.com/earlyaccess/nikukyu.css);
 
 body{
-  font-size: 15px;
   font-family: 'Hannotate SC','Comic Sans MS','Chalkduster','cursive','Hannotate TC','MS UI Gothic',sans-serif;
+  font-size: 1.2rem;
+  background: url(../img/leef.jpg) no-repeat center center/cover;
+  background-size: contain;
+  color: #fff;
+  margin: 0;
 }
 
 header{
@@ -15,13 +19,6 @@ header{
   font-size: 20px;
   text-align: center;
   color: #000;
-}
-body{
-  background: url(../img/leef.jpg) no-repeat center center/cover;
-  background-size: contain;
-  font-family: Verdana, sans-serif;
-  color: #fff;
-  margin: 0;
 }
 
 .container{
@@ -54,19 +51,7 @@ footer{
   color: blue;
 }
 
-@media screen and (max-width: 600px){
 
-  body{
-    padding: 0;
-    font-size: 3.5vw;
-  }
-    h1{
-    font-size: 7.2vw;
-  }
-
-  h2{
-    font-size: 6vw;
-  }
 
 /* pc screen */
 
@@ -94,9 +79,22 @@ footer{
   color: #fff;
   font-size: 15px;
 }
-
 .foot{
   color: blue;
 }
 
 }
+
+@media screen and (max-width: 600px){
+  body{
+    padding: 0;
+    font-size: 3.5vw;
+  }
+    h1{
+    font-size: 7.2vw;
+  }
+
+  h2{
+    font-size: 6vw;
+  }
+
