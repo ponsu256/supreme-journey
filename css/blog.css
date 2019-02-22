@@ -148,6 +148,9 @@ footer{
     .breadcrumb{
     padding: 3px 0;
   }
+  ol{
+    padding: 3px 0;
+  }
 
 body{
   font-size: 3.5vw;
