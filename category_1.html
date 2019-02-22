@@ -29,8 +29,17 @@
         <p>WEB制作関係のことがまとめてあるページです。</p>
         </section>
   <div class="container">
-  <div class="grid" data-masonry='{ "itemSelector": ".item", "columnWidth": 180, "gutter": 3, "fitWidth": true }'>
-  <section class="item">
+    <script>
+    $('.grid').masonry({
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+  </script>
+    <div class="grid">
+
+      
+  <!-- <div class="grid-item grid-sizer">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -38,8 +47,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div> -->
+  <div class="grid-item">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -47,8 +56,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div>
+  <div class="grid-item grid-item--width2 grid-item--height2">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -56,8 +65,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div>
+  <div class="grid-item grid-item--height3">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -65,8 +74,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div>
+  <div class="grid-item grid-item--height2">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -74,8 +83,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div>
+  <div class="grid-item grid-item--width3">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -83,8 +92,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div>
+  <div class="grid-item">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -92,8 +101,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div>
+  <div class="grid-item">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -101,8 +110,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div>
+  <div class="grid-item grid-item--height2">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -110,8 +119,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div>
+  <div class="grid-item grid-item--width2 grid-item--height3">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -119,8 +128,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div>
+  <div class="grid-item">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -128,8 +137,8 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
-  <section class="item">
+  </div>
+  <div class="grid-item grid-item--height2">
     <a href="#">
       <img class="image" src="img/newdog.jpg" alt="dog">
       <div class="category">Main Dish</div>
@@ -137,12 +146,124 @@
         Lorem ipsum dolor Lorem ipsum
         dolorLorem ipsum dolor</p>
     </a>
-  </section>
+  </div>
+  <div class="grid-item">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div>
+  <div class="grid-item grid-item--width2 grid-item--height2">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div>
+  <div class="grid-item grid-item--width2">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div>
+  <div class="grid-item grid-item--height2">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div>
+  <div class="grid-item">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div>
+  <div class="grid-item grid-item--height3">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div>
+  <!-- <div class="grid-item grid-item--height2">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div> -->
+  <!-- <div class="grid-item">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div> -->
+  <!-- <div class="grid-item">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div>
+  <div class="grid-item grid-item--height2">
+    <a href="#">
+      <img class="image" src="img/newdog.jpg" alt="dog">
+      <div class="category">Main Dish</div>
+      <p class="discription">
+        Lorem ipsum dolor Lorem ipsum
+        dolorLorem ipsum dolor</p>
+    </a>
+  </div> -->
+</div>
+
+
+
   </div>
   </div>
   <footer>
     ©Copyright2019<br> <span class="foot"><strong>ponsu.tech</strong></span> All Rights Reserved.
   </footer>
+
 </body>
 </html>
-
