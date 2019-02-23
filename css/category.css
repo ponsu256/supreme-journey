@@ -99,6 +99,31 @@ a:link, a:visited, a:hover, a:active{
   color: #7c5119;
   text-decoration: none;
 }
+.grid-item--width2,
+.grid-item--width3{
+  position: relative;
+}
+.pickup{
+  background-color: #FFCC00;
+  width: 24%;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  box-shadow: 3px 3px 3px #ccc;
+  color: #fff;
+  font-weight: bold;
+}
+
+.pickup3{
+  background-color: #FFCC00;
+  width: 19%;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  box-shadow: 3px 3px 3px #ccc;
+  color: blue;
+  font-weight: bold;
+}
 
 .grid-sizer,
 .grid-item {
@@ -248,6 +273,9 @@ footer{
 
 /* 画面サイズが600以下の場合に適応する */
 @media screen and (max-width: 600px){
+  .pickup{
+    display: none;
+  }
   .grid-item{
     font-size: 12px;
   }
