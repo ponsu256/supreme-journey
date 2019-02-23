@@ -276,6 +276,9 @@ footer{
   .pickup{
     display: none;
   }
+  .pickup3{
+    display: none;
+  }
   .grid-item{
     font-size: 12px;
   }
