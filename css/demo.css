@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+body{
+  max-width: 900px;
+  margin: auto;
+}
+.slickbox{
+  margin-top: 30px;
+}
+
+img{
+  width: 100%;
+  height: 50%;
+}
