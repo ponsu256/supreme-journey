@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ぽんすのブログ</title>
+  <link rel="stylesheet" href="css/demo.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="slickBox/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slickBox/slick/slick-theme.css"/>
+</head>
+
+<body>
+  <div class="slickbox">
+              <div><img src="img/dack.jpg"></div>
+              <div><img src="img/dack.jpg"></div>
+              <div><img src="img/dack.jpg"></div>
+              <div><img src="img/dack.jpg"></div>
+              <div><img src="img/dack.jpg"></div>
+              <div><img src="img/dack.jpg"></div>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script type="text/javascript" src="slickBox/slick/slick.min.js"></script>
+            <script type="text/javascript">
+             $(document).ready(function(){
+               $('.slickbox').slick({
+                 dots: true,
+                 slidesToScroll:3,
+                 slidesToShow:3
+               });
+             });
+           </script>
+</body>
+</html>
