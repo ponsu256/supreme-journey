@@ -174,18 +174,23 @@
           <p><span class="title-min">修正後</span></p>
           <pre>
             <code class="prettyprint lang-css">
-              .slick-prev{
-                left: 5px;
-                z-index: 100;
-              }
-
+              .slick-prev,
               .slick-next{
-                right: 35px;
-                z-index: 99;
+                width: 30px;
+                height: 30px;
               }
               .slick-prev:before,
               .slick-next:before{
-                font-size: 50px;
+                font-size: 30px;
+              }
+              .slick-prev{
+                left: 10px;
+                z-index: 2;
+              }
+
+              .slick-next{
+                right: 10px;
+                z-index: 1;
               }
             </code>
           </pre>
