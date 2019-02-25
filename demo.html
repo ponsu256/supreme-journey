@@ -21,13 +21,25 @@
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
             <script type="text/javascript" src="slickBox/slick/slick.min.js"></script>
             <script type="text/javascript">
-             $(document).ready(function(){
-               $('.slickbox').slick({
-                 dots: true,
-                 slidesToScroll:3,
-                 slidesToShow:3
-               });
-             });
-           </script>
+     $(document).ready(function(){
+       $('.slickbox').slick({
+         dots: true,
+         slidesToScroll:3,
+         slidesToShow:3,
+         responsive: [{
+        breakpoint: 600,settings: { //481px～600pxでは2画像表示
+        slidesToShow: 2,
+        slidesToScroll: 2
+        }
+        },
+        {
+        breakpoint: 480,settings: {//480px以下では1画像表示
+        slidesToShow: 1,
+        slidesToScroll: 1
+        }
+        }]
+    });
+  });
+   </script>
 </body>
 </html>
