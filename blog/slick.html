@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ぽんすのブログ</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" href="../img/favicon.png">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" sizes="180x180">
+  <link rel="android-touch-icon" type="image/png" href="../img/android-touch-icon.png" sizes="192x192">
+  <link rel="stylesheet" href="../css/slick.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <link rel="stylesheet" type="text/css" href="../slickBox/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="../slickBox/slick/slick-theme.css"/>
+</head>
+<body>
+  <header>
+    <h1>ポンスノブログ</h1>
+  </header>
+  <div class="content">
+    <div class="main">
+      <ol class="breadcrumb">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="category_1.html">WEB制作</a></li>
+        <li>ブログ記事ページ</li>
+      </ol>
+    <article>
+      <h1>超初心者でもできた！ページスライダーの作り方
+        <span class="subtitle">
+          jQueryのプラグイン"slick"を使ってページスライダーを作る方法
+        </span></h1>
+      <p> 最近色々なオシャレサイトで見かける軽やかなページスライダー。
+        jQueryのプラグイン"slick"を使えば簡単に実装可能です！
+        この記事では、実際にどんなコードを書けばいいかの具体例を示しながら、"slick"の使い方を解説していきます。
+        「簡単なHTMLとCSSの知識しかない。」「jQueryなんてやった事ない。」という方でもわかる説明を心がけているので、WEB制作初心者の方も挑戦してみましょう。
+      </p>
+        <h2><a href="demo.html">デモページはこちら（コード確認できます）</a></h2>
+        <div class="slickbox">
+            <div><img src="../img/dack.jpg"></div>
+            <div><img src="../img/dack.jpg"></div>
+            <div><img src="../img/dack.jpg"></div>
+            <div><img src="../img/dack.jpg"></div>
+            <div><img src="../img/dack.jpg"></div>
+            <div><img src="../img/dack.jpg"></div>
+        </div>
+        <hr>
+        <div class="discri">
+          <img src="../img/slick1.jpg" alt="slick1">
+          <p>まずはhttp://kenwheeler.github.io/slick/に入り、<br>
+            右上の"Get it now"をクリックします。</p>
+          <img src="../img/slick2.jpg" alt="slick2">
+          <p>"Download Now"をクリック。</p>
+          <img src="../img/slick3.jpg" alt="slick3">
+          <p>すると、デスクトップに写真左のようなzipファイルが現れるので、これをダブルクリックし、
+          右手に出てきたファイルをサーバーに配置します。
+          配置する場所は、Atomのプロジェクトファイルにだったり、
+          このブログの場合はGithubレポジトリにだったり、使う環境次第です。
+          ファイルの名前はこのままでもいいですが、"slick-1.8 1 2"って名前は管理しづらくて嫌だったので、<span class="color">"slick-1.8 1 2"→"slickBox"に名前を変更</span>します。</p>
+          <img src="../img/slick4.jpg" alt="slick4">
+          <p>私の場合は、まずはAtomで作ってからGithubレポジトリに移すスタイルで
+          やってるので、Atomのプロジェクトファイルにとりあえず配置しました！<br>
+          これで準備は完了です。
+          後はコードを書くのみです。</p><hr><br>
+          <p><span class="title-count">1、HTMLのスライダーを追加したい場所に以下のようなコードを書きます。</span></p>
+          <p><span class="title-min">sampleコード</span></p>
+            <pre>
+            <code class="prettyprint">
+            &lt;div class="your-class"&gt;
+              &lt;div&gt;your content&lt;/div&gt;
+              &lt;div&gt;your content&lt;/div&gt;
+              &lt;div&gt;your content&lt;/div&gt;
+            &lt;/div&gt;
+            </code>
+            </pre>
+          <p><span class="title-min">実際に書いたコード</span></p>
+          <pre>
+            <code class="prettyprint">
+            &lt;div class="slickbox"&gt;
+              &lt;div&gt;&lt;img src="img/dack.jpg"&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;img src="img/dack.jpg"&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;img src="img/dack.jpg"&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;img src="img/dack.jpg"&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;img src="img/dack.jpg"&gt;&lt;/div&gt;
+              &lt;div&gt;&lt;img src="img/dack.jpg"&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            </code>
+          </pre>
+          <p><span class="title-count">2、&lt;head&gt;の中に以下のように書き込みます。</span></p>
+          <p><span class="title-min">sampleコード</span></p>
+          <pre>
+            <code class="prettyprint">
+              &lt;link rel="stylesheet" type="text/css" href="slick/slick.css"/&gt;
+              &lt;link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/&gt;
+            </code>
+          </pre>
+          <p><span class="title-min">実際に書いたコード</span></p>
+          <p>（ちゃんと階層を合わせてないと動かないのでご注意ください。）</p>
+          <pre>
+            <code class="prettyprint">
+              &lt;link rel="stylesheet" type="text/css" href="slickBox/slick/slick.css"/&gt;
+              &lt;link rel="stylesheet" type="text/css" href="slickBox/slick/slick-theme.css"/&gt;
+            </code>
+          </pre>
+          <p><span class="title-count">3、&lt;/body&gt;の閉じタグの上にjQueryの読み込みを配置。その下にslick.jsも追加します。</span></p>
+          <p><span class="title-min">sampleコード</span></p>
+          <pre>
+            <code class="prettyprint">
+              &lt;script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"&gt;&lt;/script&gt;
+              &lt;script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"&gt;&lt;/script&gt;
+              &lt;script type="text/javascript" src="slick/slick.min.js"&gt;&lt;/script&gt;
+            </code>
+          </pre>
+          <p><span class="title-min">実際に書いたコード</span></p>
+          <pre>
+            <code class="prettyprint">
+              &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt;&lt;/script&gt;
+              &lt;script type="text/javascript" src="slickBox/slick/slick.min.js"&gt;&lt;/script&gt;
+            </code>
+          </pre>
+          <p>この手順では、まずjQueryを読み込んでからslick.jsを加えているのですが、
+          jQueryをまるで知らないと少し意味がわからないかもしれません。
+          とりあえず、jQueryの読み込み処理は上の[実際に書いたコード]の1行目をそのまま貼り付けるだけで大丈夫です。
+          2行目のslick.jsを加える処理も階層だけ注意すればそのまま貼り付けて使えます。
+          jQueryの読み込み処理についての解説は別記事に今後まとめるので、ひとまず今は深く考えずにコピペしてしまいましょう。</p><br><br>
+          <p><span class="title-count">4、どんなスライダーを作るのか？のカスタマイズ設定をしていきます。このコードは、3で書いたコードの真下、bodyの閉じタグの上に配置します。</span></p>
+          <p><span class="title-min">sampleコード</span></p>
+          <pre>
+            <code class="prettyprint">
+              &lt;script type="text/javascript"&gt;
+              $(document).ready(function(){
+              $('.your-class').slick({
+                setting-name: setting-value
+                });
+              });
+              &lt;/script&gt;
+            </code>
+          </pre>
+          <p><span class="title-min">実際に書いたコード</span></p>
+          <pre>
+            <code class="prettyprint">
+              &lt;script type="text/javascript"&gt;
+              $(document).ready(function(){
+                $('.slickbox').slick({
+                  dots: true,
+                  slidesToScroll:3,
+                  slidesToShow:3
+                });
+              });
+            &lt;/script&gt;
+            </code>
+          </pre>
+          <p><span class="title-count">5、slick-theme.cssを修正する</span></p>
+          <p>1〜4の手順でHTMLへの書き込みは終了。次は、CSSを修正します。デフォルトのCSSコードのままだと、横にスライドさせる為の矢印が非表示です。（そんなバカな！！）というわけで、最初にダウンロードしたファイルの中に入っている
+          slick-theme.cssを少し修正します。</p>
+          <p><span class="title-min">デフォルトのCSSコード</span></p>
+          <pre>
+            <code class="prettyprint">
+              .slick-prev{
+                left: -25px;
+              }
+
+              .slick-next{
+                left: -25px;
+              }
+
+              .slick-prev:before,
+              .slick-next:before{
+                font-size: 20px;
+              }
+            </code>
+          </pre>
+          <p><span class="title-min">修正後</span></p>
+          <pre>
+            <code class="prettyprint lang-css">
+              .slick-prev{
+                left: 5px;
+                z-index: 100;
+              }
+
+              .slick-next{
+                right: 35px;
+                z-index: 99;
+              }
+              .slick-prev:before,
+              .slick-next:before{
+                font-size: 50px;
+              }
+            </code>
+          </pre>
+          <p>これで上にデモを用意したような、画像を切り替えるスライダーが完成です。
+          更に画像にリンクをのせたり、コメントを書き込んだりして好きなようにアレンジしましょう。
+          スライダーのスタイルをカスタマイズしたい場合は、http://kenwheeler.github.io/slick/のデモページで確認して、
+          手順4の"setting-name"を書き換えて調節すれば色々なパターンのスライダーが作れることでしょう。
+          </p>
+          </div>
+      </article>
+    </div>
+    <aside class="sidebar">
+      <section>
+        <h2>過去の記事</h2>
+        <ul>
+          <li><a href="#">2019年1月</a></li>
+          <li><a href="#">2019年2月</a></li>
+          <li><a href="#">2019年3月</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>カテゴリー</h2>
+        <ul>
+          <li><a href="#">カテゴリー1</a></li>
+          <li><a href="#">カテゴリー2</a></li>
+          <li><a href="#">カテゴリー3</a></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+    <footer>
+      ©Copyright2019<br> <span class="foot"><strong>ponsu.tech</strong></span> All Rights Reserved.
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../slickBox/slick/slick.min.js"></script>
+    <script type="text/javascript">
+     $(document).ready(function(){
+       $('.slickbox').slick({
+         dots: true,
+         slidesToScroll:3,
+         slidesToShow:3
+       });
+     });
+   </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c68353001910e2f"></script>
+</body>
+</html>
