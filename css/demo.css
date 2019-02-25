@@ -7,6 +7,12 @@ body{
 .slickbox{
   margin-top: 30px;
 }
+h1{
+  max-width: 700px;
+  font-size: 18px;
+  margin: auto;
+  margin-top: 30px;
+}
 
 img{
   width: 100%;
