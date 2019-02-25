@@ -226,9 +226,21 @@
        $('.slickbox').slick({
          dots: true,
          slidesToScroll:3,
-         slidesToShow:3
-       });
-     });
+         slidesToShow:3,
+         responsive: [{
+        breakpoint: 600,settings: { //481px～600pxでは2画像表示
+        slidesToShow: 2,
+        slidesToScroll: 2
+        }
+        },
+        {
+        breakpoint: 480,settings: {//480px以下では1画像表示
+        slidesToShow: 1,
+        slidesToScroll: 1
+        }
+        }]
+    });
+  });
    </script>
     <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c68353001910e2f"></script>
 </body>
