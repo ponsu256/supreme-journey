@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ぽんすのブログ</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" href="../img/favicon.png">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" sizes="180x180">
+  <link rel="android-touch-icon" type="image/png" href="../img/android-touch-icon.png" sizes="192x192">
+  <link rel="stylesheet" href="../css/thumbnail.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <meta content="article" property="og:type">
+  <meta property="fb:admins" content="100030715353027" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Hellomy432" />
+  <meta property="og:url" content="https://ponsu.tech/blog/thumbnail.html" />
+  <meta property="og:title" content="SNSに記事投稿した時、サムネイルを表示させるには？" />
+  <meta property="og:description" content="SNSでURLを貼り付けて投稿した際に、画像付きリンクを表示させる方法。" />
+  <meta property="og:image" content="https://ponsu.tech/img/thumbnail.jpg" />
+</head>
+<body>
+  <header>
+    <h1>ポンスノブログ</h1>
+  </header>
+  <div class="content">
+    <div class="main">
+      <ol class="breadcrumb">
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="category_1.html">WEB制作</a></li>
+        <li>サムネイルの作り方</li>
+      </ol>
+    <article>
+      <h1>SNSに記事投稿した時、サムネイルを表示させるには？（2019/2/26）
+        <span class="subtitle">
+          SNSでURLを貼り付けて投稿した際に、画像付きリンクを表示させる方法。
+        </span></h1>
+      <p>
+        自分で書いたブログをTwitterやFaceBookなどのSNSに貼り付けた時に、画像やタイトルのリンクが出てくると嬉しいですよね。いや、むしろ出てきて当たり前。出てこないとちょっと…という時代かもしれません。はてなブログやnoteなどのレンタルブログだと、画像の選択するだけで素敵なサムネイルがでてきます。WordPressならばプラグインで一括して設定できます。
+        では、自分で作ったブログの場合は？
+        <p>この記事では、自分でWEB制作している人が簡単にサムネイル設定が出来るように解説をしたいと思います。
+        <br>↓こんな感じのサムネイルを、タイムラインに表示させちゃいましょう！
+        </p>
+      <p><img src="../img/thumbnail1.jpg" alt="thumbnail1">
+      </p>
+        <hr>
+        <div class="discri">
+          <p>ドメインだけ買ってNetlifyという無料のサーバーを使って運用している当ブログですが、
+            記事を知り合いに見てもらおうと、Twitterにリンクを貼って送信したときに違和感を感じました。</p>
+          <p><img src="../img/thumbnail2.jpg" alt="thumbnail2"></p>
+          <p>わかります？
+            そうです！URL だけで味気ないのです！
+            確かに昔はみんなこんな感じだった気もしますが、<br>なんかナウくないですよね！ハイカラじゃないですよね！
+            今時のブログは投稿すると、小さい画像とタイトルつきでこんな感じの出てきますもんね！
+          </p>
+          <img src="../img/thumbnail1.jpg" alt="thumbnail1">
+          <p>もしくは、こんなの...</p>
+          <img src="../img/thumbnail3.jpg" alt="thumbnail3">
+          <p>という訳で、SNSに投稿した時に画像付きリンクを表示させる方法を調べてみました。
+          </p>
+          </div>
+          <div class="discri-2">
+          <p><span class="title-count">1、画像の準備をします。</span></p>
+          <p>
+            サムネイルには２種類あります。
+            上に大きな画像がついて、下に簡単な説明がつくタイプの大きなサムネイルと、
+            小さな画像が左側についている長方形型のサムネイルです。
+            </p>
+            <p>大きな画像のサムネイルを作りたい場合は、800×419ピクセルの画像を用意しましょう。
+            <br>小さな画像のサムネイルを作りたい場合は、300×300ピクセルの画像を用意しましょう。
+            </p>
+          <p class="top"><span class="title-count">2、&lt;head&gt;の中に以下のように書き込みます。</span></p>
+          <pre>
+            <code>
+              &lt;meta content="article" property="og:type"&gt;
+              &lt;meta property="fb:admins" content=<span class="color">"FaceBookのID"</span> /&gt;
+              &lt;meta name="twitter:card" content=<span class="color">"大きい画像か？小さい画像か？"</span> /&gt;
+              &lt;meta name="twitter:site" content=<span class="color">"@TwitterのID"</span> /&gt;
+              &lt;meta property="og:url" content=<span class="color">"SNSに投稿する記事のURL"</span> /&gt;
+              &lt;meta property="og:title" content=<span class="color">"記事のタイトル"</span> /&gt;
+              &lt;meta property="og:description" content=<span class="color">"記事の説明"</span> /&gt;
+              &lt;meta property="og:image" content=<span class="color">"表示したい画像のURL"</span> /&gt;
+            </code>
+          </pre>
+          <p>まず、一番上の&lt;meta content="article" property="og:type"&gt;ですが、
+            これは、「このページは記事ですよー」と宣言している部分です。
+            ブログ記事を貼り付けたい限り、ここは常に固定です。
+          </p>
+          <p>
+            次に、&lt;meta property="fb:admins" content=<span class="color">"FaceBookのID"</span> /&gt;ですが、ここにはあなたのFaceBookのIDを入れていきます。FaceBookのIDは基本15桁の数字です。
+            もし自分のFacebook IDがわからなければ、
+            <a href="https://findmyfbid.com/">https://findmyfbid.com/</a>
+            にアクセスして、あなたのページのURLを入力すれば教えてくれます。
+          </p>
+          <p>
+            &lt;meta name="twitter:card" content=<span class="color">"大きい画像か？小さい画像か？"</span> /&gt;
+            は、どちらの種類のサムネイルを作るかで入力内容が異なります。
+            大きな画像のサムネイルを作りたいならば、「summary_large_image」と入力しましょう。
+            小さな画像のサムネイルを作りたいならば、「summary」と入力しましょう。
+          </p>
+          <p>
+            &lt;meta name="twitter:site" content=<span class="color">"@TwitterのID"</span> /&gt;は、あなたのTwitterのIDを入れるところです。
+            私であれば、&lt;meta name="twitter:site" content=<span class="color">"@Hellomy432"</span> /&gt;
+            ですね。Twitterの自分の名前の下に表示されていると思います。
+          </p>
+          <p>
+            &lt;meta property="og:url" content=<span class="color">"SNSに投稿する記事のURL"</span> /&gt;は、
+            サムネイルとリンクしている記事のURLです。
+            この記事のサムネイル画像設定ならば、
+            &lt;meta property="og:url" content=<span class="color">"https://ponsu.tech/blog/thumbnail"</span> /&gt;
+            となります。
+          </p>
+          <p>
+            最後に、&lt;meta property="og:image" content=<span class="color">"表示したい画像のURL"</span> /&gt;ですが、
+            これは例えばこのブログページであれば、
+            &lt;meta property="og:image" content=<span class="color">"https://ponsu.tech/img/SNSslick.jpg"</span> /&gt;
+            となります。いつものHTMLでの画像呼び出しの感覚だと<span class="color">../img/SNSslick.jpg</span>などと書きたくなりますが、それとは少し違うので注意してください。
+          </p>
+          <div class="discri-3">
+            <h2>これで完成です！</h2>
+          </div>
+          <p>しばらくすると、サムネイルが反映されるようになりますが、ただ待っていると少し時間がかかります。
+            そこで、<a href="https://cards-dev.twitter.com/validator">https://cards-dev.twitter.com/validator</a>
+          にアクセスして、サムネイルをつけたい記事のURLを打ち込むと早く反映されるので、ぜひやってみて確認しましょう。
+          </p>
+          </div>
+      </article>
+    </div>
+    <aside class="sidebar">
+      <section>
+        <h2>過去の記事</h2>
+        <ul>
+          <li><a href="#">2019年1月</a></li>
+          <li><a href="#">2019年2月</a></li>
+          <li><a href="#">2019年3月</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>カテゴリー</h2>
+        <ul>
+          <li><a href="#">カテゴリー1</a></li>
+          <li><a href="#">カテゴリー2</a></li>
+          <li><a href="#">カテゴリー3</a></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+    <footer>
+      ©Copyright2019<br> <span class="foot"><strong>ponsu.tech</strong></span> All Rights Reserved.
+    </footer>
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c68353001910e2f"></script>
+</body>
+</html>
