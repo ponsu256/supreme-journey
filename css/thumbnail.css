@@ -1,0 +1,284 @@
+/* 冒頭でimport */
+@import url(https://fonts.googleapis.com/earlyaccess/nikukyu.css);
+
+/* フォント
+body
+'HG創英角ポップ体','Hannotate SC','Comic Sans MS',cursive,fantasy,sans-serif;
+header
+'Nikukyu';
+code
+Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+footer
+'Comic Sans MS','Chalkduster',cursive,fantasy; */
+
+
+header{
+  background-color: #FFCC00;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  /* フォントを指定したいところで */
+  font-family: 'Nikukyu';
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+
+
+.breadcrumb{
+  list-style: none;
+  /* border: 1px solid #b3b3b3; */
+  padding: 3px 20px;
+  border-radius: 5px;
+  /* background-color: #ececec; */
+  font-size: 14px;
+}
+.breadcrumb a{
+  /* color: #FA5700; */
+  color: #7c5119;
+  text-decoration: none;
+}
+.breadcrumb a:hover{
+  cursor: pointer;
+  color: blue;
+}
+
+.breadcrumb li{
+  display: inline-block;
+}
+
+.breadcrumb li::after{
+  content: ">>";
+  padding: 0 5px;
+  color: #b3b3b3;
+}
+
+.breadcrumb li:last-child::after{
+  content: none;
+}
+body{
+  font-size: 15px;
+  font-family: 'HG創英角ポップ体','Hannotate SC','Comic Sans MS',cursive,fantasy,sans-serif;
+  color: #000;
+  margin-bottom: 0;
+  margin: 0;
+}
+.slick-dotted > .slick-slider{
+  margin-bottom: 60px;
+}
+
+.subtitle{
+  display: block;
+  padding-top: 5px;
+  border-top: 1px dashed #3b98b6;
+  font-size: 15px;
+  font-weight: normal;
+  color: #3b98b6;
+}
+p > strong{
+  font-weight: normal;
+  background: linear-gradient(transparent 55%,#fafa00 55%,#fafa00 100%);
+}
+.discri{
+  margin-top: 10px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+p{
+  margin-bottom: 10px;
+}
+pre{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #999;
+  overflow: scroll;
+  resize: horizontal;
+  margin-bottom: 50px;
+}
+pre:nth-of-type(6),
+pre:nth-of-type(10){
+  margin-bottom: 0;
+  }
+
+.color{
+  color: #cc3366;
+}
+span.title-count{
+  background: #222;
+  color: #fff;
+  padding: 5px;
+  line-height: 25px;
+}
+.top{
+  margin-top: 30px;
+}
+
+.title-min{
+  font-size: 18px;
+  color: red;
+}
+.discri-3{
+  margin-top: 30px;
+}
+<span class="pln">pre </span><span class="pun">{</span><span class="pln">
+    white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span><span class="pln"> pre</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">;</span>         <span class="com">/* CSS3 */</span><span class="pln">
+    white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span> <span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">pre</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">;</span>    <span class="com">/* Firefox */</span><span class="pln">
+    white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span> <span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">pre</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">;</span> <span class="com">/* Chrome, Safari */</span><span class="pln">
+    white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span> <span class="pun">-</span><span class="pln">o</span><span class="pun">-</span><span class="pln">pre</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">;</span>      <span class="com">/* Opera 7 */</span><span class="pln">
+    word</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">:</span> <span class="kwd">break</span><span class="pun">-</span><span class="pln">word</span><span class="pun">;</span>         <span class="com">/* IE 5.5+ */</span>
+<span class="pun">}</span>
+
+code {
+  color: #fff;
+  font-size: 14px;
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+h2{
+  font-size: 18px;
+}
+
+img{
+  max-width: 400px;
+  max-height: 300px;
+  border: 2px solid #000;
+  width: 100%;
+  height: 50%;
+  margin-top: 20px;
+}
+.content{
+  overflow: hidden;
+}
+.main{
+  max-width: 800px;
+  margin: 0 10px;
+  float: left;
+  margin-left: 60px;
+}
+
+.sidebar{
+  width: 200px;
+  margin: 0 10px 0 30px;
+  float: right;
+  margin-top: 100px;
+}
+
+li >a:hover{
+  color: blue;
+}
+
+article{
+  margin-bottom: 30px;
+}
+
+
+footer{
+  background-color: #FFCC00;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  color: #fff;
+  font-family: 'Comic Sans MS','Chalkduster',cursive,fantasy;
+}
+
+.foot{
+  color: blue;
+}
+
+/* pc screen */
+
+/* 570pxより大きくなったら変更してね */
+
+
+@media (min-width: 570px){
+
+
+header{
+  line-height: 70px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+
+footer{
+  background-color: #FFCC00;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.foot{
+  color: blue;
+}
+
+}
+
+/* 画面サイズが600以下の場合に適応する */
+@media screen and (max-width: 800px){
+
+body{
+  font-size: 3.5vw;
+}
+header{
+  width: auto;
+  margin: 0;
+}
+a{
+  font-size: 15px;
+}
+/* .logo{
+  float: none;
+  margin-top: 60px;
+  text-align: center;
+}
+.global-nav{
+  float: none;
+  margin-top: 40px;
+  text-align: center;
+}
+.global-nav li{
+  display: inline;
+  float: none;
+  margin: 0 8px;
+} */
+/* #wrap{
+  margin-top: 40px;
+  padding: 35px 0 0;
+} */
+
+.content{
+  width: 100%;
+}
+.main{
+  float: none;
+  width: auto;
+  margin: 0 5%;
+}
+
+h1{
+  font-size: 7.2vw;
+}
+
+h2{
+  font-size: 6vw;
+}
+
+h2 img{
+  max-width: 100%;
+}
+.sidebar{
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 30px 20px 20px;
+  background-color: #f7f6f4;
+}
+
+
+}
