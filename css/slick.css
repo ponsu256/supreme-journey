@@ -13,7 +13,6 @@ header{
   color: #000;
 }
 
-
 .breadcrumb{
   list-style: none;
   /* border: 1px solid #b3b3b3; */
@@ -157,7 +156,9 @@ li >a:hover{
 article{
   margin-bottom: 30px;
 }
-
+a:hover{
+  color: blue;
+}
 
 footer{
   background-color: #FFCC00;
