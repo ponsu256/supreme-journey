@@ -157,6 +157,12 @@ article{
   margin-bottom: 30px;
 }
 a:hover{
+  text-decoration: underline;
+}
+
+a{
+  padding: 8px;
+  text-decoration: none;
   color: blue;
 }
 
