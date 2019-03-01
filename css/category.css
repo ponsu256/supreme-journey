@@ -192,6 +192,11 @@ a:link, a:visited, a:hover, a:active{
   box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3);
   opacity: 0.8;
 }
+.image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .image-leef{
   display: block;
