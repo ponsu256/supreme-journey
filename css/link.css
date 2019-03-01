@@ -72,7 +72,7 @@ a:hover{
   box-shadow: 2px 2px 20px #333;
 }
 iframe{
-  width: 700px;
+  width: 900px;
   height: 200px;
 }
 
@@ -225,7 +225,7 @@ h2 img{
   max-width: 100%;
 }
   iframe{
-  height: 330px;
+  height: 350px;
 }
 .sidebar{
   float: none;
