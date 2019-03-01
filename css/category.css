@@ -1,45 +1,11 @@
 /* 冒頭でimport */
 @import url(https://fonts.googleapis.com/earlyaccess/nikukyu.css);
 
-.title{
-  font-family: 'HG創英角ポップ体','Hannotate SC','Comic Sans MS','Chalkduster',cursive,fantasy,sans-serif;
-  font-size: 18px;
-  text-align: center;
-}
-
-#first{
-  margin-bottom: 50px;
-  /* text-align: center; */
-}
-
-#first > h1{
-  margin-bottom: 0;
-}
-#first > p{
-  margin-top: 5px;
-  font-size: 16px;
-}
-
-header{
-  background-color: #FFCC00;
-  padding-top: 5px;
-  padding-bottom: 1px;
-  /* フォントを指定したいところで */
-  font-family: 'Nikukyu';
-  font-size: 20px;
-  text-align: center;
-  color: #000;
-}
-
 .breadcrumb{
   list-style: none;
-  /* border: 1px solid #b3b3b3; */
   padding: 3px 20px;
-  border-radius: 5px;
-  /* background-color: #ececec; */
   font-size: 14px;
 }
-
 .breadcrumb a{
   color: #FA5700;
 }
@@ -47,54 +13,77 @@ header{
   cursor: pointer;
   color: blue;
 }
-
 .breadcrumb li{
   display: inline-block;
 }
-
 .breadcrumb li::after{
   content: ">>";
   padding: 0 5px;
   color: #b3b3b3;
 }
-
 .breadcrumb li:last-child::after{
   content: none;
 }
-
+#first{
+  margin-bottom: 50px;
+}
+#first > h1{
+  margin-bottom: 0;
+}
+#first > p{
+  margin-top: 5px;
+  font-size: 16px;
+}
+/* ナビメニュー */
+.head ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'HG創英角ポップ体','Arial Rounded MT Bold','Hannotate SC','Comic Sans MS',cursive,fantasy,sans-serif;
+}
+.head a{
+  display: block;
+  padding: 15px;
+  font-size: 12px;
+}
+.head a:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
 html{
   font-size: 62.5%;
 }
-
 body{
-  padding: 30px;
   background-color: #f6f7fb;
   color: #333;
   font-size: 1.2rem;
-  font-family: 'Hiragino Kaku Gothic ProN',sans-serif;
+  font-family: 'HG創英角ポップ体','Arial Rounded MT Bold','Hannotate SC','Comic Sans MS',cursive,fantasy,sans-serif;
   margin: 0;
   padding: 0;
 }
-
-.main{
-  margin: 0 auto;
-  padding: 30px;
+header{
+  background-color: #FFCC00;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  font-family: 'Nikukyu';
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+.title{
+  font-size: 18px;
   text-align: center;
 }
+/* .main{
 
+} */
 .container{
   max-width: 900px;
   display: grid;
   margin: 0 auto;
-  /* text-align: center; */
-  justify-content: center;
-  align-items: center;
 }
-
 *, *::before, *::after{
   box-sizing: border-box;
 }
-
 a:link, a:visited, a:hover, a:active{
   color: #7c5119;
   text-decoration: none;
@@ -105,15 +94,17 @@ a:link, a:visited, a:hover, a:active{
 }
 .pickup{
   background-color: #FFCC00;
-  width: 24%;
+  width: 26%;
   position: absolute;
   top: 7px;
   right: 7px;
   box-shadow: 3px 3px 3px #ccc;
   color: #fff;
   font-weight: bold;
+  padding: 3px;
+  text-align: center;
+  font-size: 14px;
 }
-
 .pickup3{
   background-color: #FFCC00;
   width: 19%;
@@ -123,13 +114,14 @@ a:link, a:visited, a:hover, a:active{
   box-shadow: 3px 3px 3px #ccc;
   color: blue;
   font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  font-size: 14px;
 }
-
 .grid-sizer,
 .grid-item {
   width: 20%;
 }
-
 .grid-item {
   height: 120px;
   float: left;
@@ -162,22 +154,20 @@ a:link, a:visited, a:hover, a:active{
   border-radius: 5px;
   background-color: #fff;
 }
-
 .grid-item .image{
   display: block;
   width: 100%;
 }
-
 .grid-item .category{
   margin: 15px 9px 10px;
-  color: #aaa;
+  color: #555;
+  font-weight: bold;
   letter-spacing: 1px;
   font-family: "Trebuchet MS",'Hiragino Kaku Gothic ProN',sans-serif;
 }
-
 .grid-item .discription{
   margin: 10px;
-  line-height: 1.5;
+  line-height: 1.3;
 }
 .grid-item > a{
   display: block;
@@ -196,14 +186,14 @@ a:link, a:visited, a:hover, a:active{
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
 }
-
 .image-leef{
   display: block;
   width: 50%;
   margin: auto;
 }
-
 .image-leef3{
   display: block;
   width: auto;
@@ -211,22 +201,19 @@ a:link, a:visited, a:hover, a:active{
   margin-left: auto;
   margin-right: auto;
 }
-
 .pager {
     overflow: hidden;
     margin-bottom: 30px;
     margin-top: 0;
-    font-family: 'HG創英角ポップ体','Hannotate SC','Comic Sans MS','Chalkduster',cursive,fantasy,sans-serif;
+    font-family: 'HG創英角ポップ体','Arial Rounded MT Bold','Hannotate SC','Comic Sans MS',cursive,fantasy,sans-serif;
 }
 .pager ul {
     list-style: none;
-    /* background: #eee; */
     position: relative;
     left: 50%;
     float: left;
     padding-left: 0;
 }
-
 /* li要素の配置方法も相対位置にします */
 .pager ul li {
     position: relative;
@@ -237,7 +224,6 @@ a:link, a:visited, a:hover, a:active{
 .pager ul li span{
   color: blue;
 }
-
 .pager ul li span,
 .pager ul li a {
     display: block;
@@ -254,7 +240,6 @@ a:link, a:visited, a:hover, a:active{
     background: #333;
     color: #FFCC00;
 }
-
 footer{
   background-color: #FFCC00;
   text-align: center;
@@ -265,7 +250,6 @@ footer{
   color: #fff;
   font-family: 'Comic Sans MS','Chalkduster',cursive,fantasy;
 }
-
 .foot{
   color: blue;
 }
@@ -278,6 +262,34 @@ footer{
 
 /* 画面サイズが600以下の場合に適応する */
 @media screen and (max-width: 600px){
+  .navMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* トグルボタン */
+  .head0{
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .head0:hover{
+    opacity: 0.3;
+  }
+.head{
+  display: none;
+}
+h1{
+  margin-left: 30px;
+}
+
+
+
   .pickup{
     display: none;
   }
@@ -287,39 +299,28 @@ footer{
   .grid-item{
     font-size: 12px;
   }
-
   body{
     padding: 0;
     font-size: 3.5vw;
   }
- div.main{
+ /* div.main{
     padding-left: 0;
     padding-right: 0;
-  }
-
+  } */
   h1{
     font-size: 7.2vw;
   }
-
   h2{
     font-size: 6vw;
   }
-
   .title{
     text-align: left;
     padding-left: 20px;
   }
-
-  /* .grid{
-    width: 150px;
-    column-width: 150px;
-  } */
-
   .grid-sizer,
 .grid-item {
   width: 50%;
 }
-
 .grid-item {
   height: 270px;
   float: left;
@@ -328,45 +329,76 @@ footer{
   border-color: hsla(0, 0%, 0%, 0.5);
   border-radius: 5px;
 }
-
 .grid-item--width2 { width:  50%; }
 .grid-item--width3 { width:  50%; }
-
 .grid-item--height2 { height: 270px; }
 .grid-item--height3 { height: 270px; }
 .grid-item--height4 { height: 270px; }
-
 .grid-item .image{
   display: block;
-  width: 147px;
-  height: 110px;
+  width: 137px;
+  height: 102px;
 }
 .grid-item:last-child{
-  height: 150px;
-  width: 100%;
+  /* height: px;
+  width: %; */
   display: none;
 }
-
 .image-leef,
 .image-leef3{
   display: block;
-  width: 147px;
-  height: 110px;
+  width: 137px;
+  height: 102px;
 }
-
 }
 
 @media (min-width: 570px){
-
-
 header{
   line-height: 70px;
   font-size: 30px;
+  /* text-align: center; */
+}
+h1{
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 20px;
+  text-align: left;
+  width: 100%;
+}
+/* ナビメニュー */
+header{
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto; */
+}
+h1{
   text-align: center;
 }
-
-
-
+.head{
+  max-width: 900px;
+  margin: auto;
+  display: block !important;
+}
+.head ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+.head ul li{
+  width: 120px;
+  padding: 0;
+}
+.head a{
+  font-size: 15px;
+  line-height: 20px;
+}
+.head0{
+  display: none;
+}
 footer{
   background-color: #FFCC00;
   text-align: center;
@@ -377,7 +409,6 @@ footer{
   color: #fff;
   font-size: 15px;
 }
-
 .foot{
   color: blue;
 }
