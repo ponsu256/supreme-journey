@@ -20,6 +20,20 @@ header{
   text-align: center;
   color: #000;
 }
+.head ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'HG創英角ポップ体','Arial Rounded MT Bold','Hannotate SC','Comic Sans MS',cursive,fantasy,sans-serif;
+}
+.head a{
+  display: block;
+  padding: 15px;
+  font-size: 12px;
+}
+.head a:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 .container{
   max-width: 960px;
@@ -64,11 +78,7 @@ footer{
 header{
   line-height: 70px;
   font-size: 30px;
-  text-align: center;
 }
-
-
-
 footer{
   background-color: #FFCC00;
   text-align: center;
@@ -97,4 +107,29 @@ footer{
   h2{
     font-size: 6vw;
   }
+    .navMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  /* トグルボタン */
+  .head0{
+    margin-right: 10px;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 30px;
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  .head0:hover{
+    opacity: 0.3;
+  }
+.head{
+  display: none;
+}
+h1{
+  margin-left: 30px;
+}
 
