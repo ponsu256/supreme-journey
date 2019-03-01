@@ -12,13 +12,34 @@
   <link rel="stylesheet" href="css/category.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $(".head0").click(function(){
+      $(".head").slideToggle();
+    });
+  });
+  </script>
 </head>
-<body id="category">
+<body>
   <header>
+    <div class="navMenu">
     <h1>ポンスノブログ</h1>
+    <button type="button" class="head0">
+      <span class="fa fa-bars" title="menu"></sapn>
+      </button>
+    </div>
+    <nav class="head">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="category_1.html">WEB制作</a></li>
+        <li><a href="category_2.html">RPA</a></li>
+        <li><a href="category_3.html">マンガ</a></li>
+        <li><a href="category_4.html">雑談</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
   </header>
-  <div id="wrap" class="clearfix">
-    <div class="content">
       <div class="main">
         <div class="title">
         <ol class="breadcrumb">
@@ -26,7 +47,7 @@
           <li>WEB制作</li>
         </ol>
         <section id="first">
-        <h1>WEB制作</h1>
+        <h2>WEB制作</h2>
         <p>WEB制作関係の記事まとめページ</p>
         </section>
         </div>
@@ -217,7 +238,6 @@
 
 </div>
   </div>
-  </div>
   <div class="pager">
   <ul>
       <li><a href="#">前</a></li>
@@ -229,6 +249,7 @@
       <li><a href="#">30</a></li>
       <li><a href="#">次</a></li>
   </ul>
+  </div>
   </div>
   <footer>
     ©Copyright2019<br> <span class="foot"><strong>ponsu.tech</strong></span> All Rights Reserved.
