@@ -30,6 +30,8 @@ header{
   display: block;
   padding: 15px;
   font-size: 12px;
+  text-decoration: none;
+  color: #7c5119;
 }
 .head a:hover{
   background-color: rgba(0, 0, 0, 0.3);
