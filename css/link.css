@@ -64,14 +64,12 @@ a:hover{
 }
 .embedly-card{
   border: 1px solid #555;
-  box-shadow: 2px 2px 20px #555;
-  background-color: #eee;
   border-radius: 8px;
 }
 .embedly-card:hover{
   opacity: 0.5;
   cursor: pointer;
-  box-shadow: 5px 5px 20px #333;
+  box-shadow: 2px 2px 20px #333;
 }
 h2 > a{
   padding: 1px;
