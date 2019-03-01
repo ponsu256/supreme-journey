@@ -73,7 +73,11 @@ a:hover{
 }
 iframe{
   width: 500px;
-  height: 250px;
+  height: 200px;
+}
+.art-bd-img{
+  width: 100px;
+  height: 100px;
 }
 
 h2 > a{
