@@ -63,9 +63,10 @@ a:hover{
   text-decoration: underline;
 }
 .embedly-card{
-  border: 3px solid #000;
+  border: 1px solid #555;
   box-shadow: 2px 2px 20px #555;
   background-color: #eee;
+  border-radius: 8px;
 }
 .embedly-card:hover{
   opacity: 0.5;
