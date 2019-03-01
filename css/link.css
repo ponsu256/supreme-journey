@@ -65,23 +65,16 @@ a:hover{
 .embedly-card{
   border: 1px solid #555;
   border-radius: 8px;
-/*   margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0; */
 }
 .embedly-card:hover{
   opacity: 0.8;
   cursor: pointer;
   box-shadow: 2px 2px 20px #333;
 }
-/* .embedly-card-hug{
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  
-} */
+iframe{
+  width: 500px;
+  height: 250px;
+}
 
 h2 > a{
   padding: 1px;
