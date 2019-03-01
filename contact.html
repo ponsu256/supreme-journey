@@ -11,10 +11,33 @@
   <link rel="android-touch-icon" type="image/png" href="../img/android-touch-icon.png" sizes="192x192">
   <link rel="stylesheet" href="css/contact.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $(".head0").click(function(){
+      $(".head").slideToggle();
+    });
+  });
+  </script>
 </head>
 <body>
   <header>
+    <div class="navMenu">
     <h1>ポンスノブログ</h1>
+    <button type="button" class="head0">
+      <span class="fa fa-bars" title="menu"></sapn>
+      </button>
+    </div>
+    <nav class="head">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="category_1.html">WEB制作</a></li>
+        <li><a href="category_2.html">RPA</a></li>
+        <li><a href="category_3.html">マンガ</a></li>
+        <li><a href="category_4.html">雑談</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
   </header>
     <div class="container">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfL-D91wHzU_GRDctVa5FC57TV5Jcgfy0BQLJtnR0_Y6z6ymA/viewform?embedded=true" width="640" height="870" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
