@@ -1,10 +1,10 @@
 /* 冒頭でimport */
 @import url(https://fonts.googleapis.com/earlyaccess/nikukyu.css);
-/* .embedly-card{
+.embedly-card{
   border: 1px solid #555;
   border-radius: 8px;
-} */
-iframe{
+}
+/* iframe{
   border: 1px solid #555;
   border-radius: 8px;
 }
@@ -13,7 +13,7 @@ iframe:hover{
   color: blue;
   cursor: pointer;
   box-shadow: 2px 2px 20px #333;
-}
+} */
 .embdscl0{
   display: none;
 }
