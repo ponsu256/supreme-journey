@@ -4,7 +4,7 @@
   border: 1px solid #555;
   border-radius: 8px;
 }
-.embedly-card:hover{
+a:hover{
   opacity: 0.8;
   cursor: pointer;
   box-shadow: 2px 2px 20px #333;
