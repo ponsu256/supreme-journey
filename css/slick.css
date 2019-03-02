@@ -4,7 +4,7 @@
   border: 1px solid #555;
   border-radius: 8px;
 }
-.card.sm-img .pair-bd:hover{
+div.pair-bd:hover{
   opacity: 0.8;
   color: blue;
   cursor: pointer;
