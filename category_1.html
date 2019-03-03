@@ -43,13 +43,6 @@
         </section>
         </div>
   <div class="container">
-    <script>
-    $('.grid').masonry({
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
-    });
-  </script>
     <div class="grid">
 
   <div class="grid-item">
@@ -246,6 +239,13 @@
   </footer>
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script>
+    $('.grid').masonry({
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+  </script>
   <script>
   $(function(){
     $(".head0").click(function(){
