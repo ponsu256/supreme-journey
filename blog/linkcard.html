@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>ぽんすのブログ</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="icon" href="../img/favicon.png">
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon.png" sizes="180x180">
+  <link rel="android-touch-icon" type="image/png" href="../img/android-touch-icon.png" sizes="192x192">
+  <link rel="stylesheet" href="../css/linkcard.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+  <meta content="article" property="og:type">
+  <meta property="fb:admins" content="100030715353027" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@Hellomy432" />
+  <meta property="og:url" content="https://ponsu.tech/blog/linkcard.html" />
+  <meta property="og:title" content="リンクカードを簡単に作る方法はこれ！" />
+  <meta property="og:description" content="Embedlyを使うとリンクカードは一瞬で完成します。" />
+  <meta property="og:image" content="https://ponsu.tech/img/linkcard.jpg" />
+</head>
+<body>
+  <header>
+    <div class="container">
+        <i id="open_menu" class="fas fa-bars"></i>
+      <nav id="menu" class="shown">
+        <i id="close_menu" class="fas fa-times"></i>
+        <ul>
+          <li><a href="../index.html">ホーム</a></li>
+          <li><a href="../category_1.html">WEB制作</a></li>
+          <li><a href="../category_2.html">RPA</a></li>
+          <li><a href="../category_3.html">マンガ</a></li>
+          <li><a href="../category_4.html">雑談</a></li>
+          <li><a href="../contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+      </div>
+    <h1 class="important">ポンスノブログ</h1>
+  </header>
+  <div class="content">
+    <div class="main">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">ホーム</a></li>
+        <li><a href="../category_1.html">WEB制作</a></li>
+        <li>リンクカードの作り方</li>
+      </ol>
+    <article>
+      <h1>記事内に表示するリンクカードの作り方
+        <span class="subtitle">
+          Embedlyというサービスを使って、一瞬でリンクカードを作る方法。
+        </span></h1>
+      <p>
+
+        <p>
+          <a href="link.html" ><i class="fas fa-link"></i>
+          前回の記事</a>では、自分の記事への内部リンク・外部リンクの貼り方について解説しました。
+          それらを踏まえ今回は、リンクカードの貼り方について説明します。「内部リンク」と「外部リンク」と「リンクカード」
+          の３つの使い分けによって、より本格的でユーザーフレンドリーなサイトの作成を目指しましょう！
+        </p>
+        <p>↓↓↓↓↓今回作るリンクカード</p>
+        <a class="embedly-card" data-card-type="article" href="https://ponsu.tech/blog/link.html">記事にリンクを貼る時、横につけるマークを使いこなそう！</a><script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+        <hr>
+        <div class="discri">
+          <p>
+            さて、リンクカードを作る方法はいくつかあります。イチから自分でコードを書いて自作する人もいれば、「GetTabInfo」というGoogleの拡張機能を使う人もいるそうです。
+            Wordpressでブログを書いている人ならプラグインなどを使用するのでしょう。
+          </p>
+          <p>
+            私のブログはWordpressではなく、自分でコードを書いて作るタイプのWEBサイトですのでプラグインは使えません。
+            イチから自分でコードを書いて自作する気力もないです。
+            正直、「GetTabInfo」は今の段階ではよくわかってないです。少し調べた感じ、なんか違う感は感じました。
+          </p>
+          <p>今回Embedlyを選んだのは、簡単・無料だから！これが理由です。
+            有料版（月１０００円くらい）を買わないことには右下に出てくる「powered by embedly」という文字が邪魔だったり、カスタマイズ性の面で少し問題はありますが...。
+            それでも、今の私のブログにはこれで十分と考えたので、このサービスの採用を決定しました。</p>
+          <p>ではとりあえずリンクカードを作ってみましょう！
+            まずは<a href="https://embed.ly/bookmarklet" target="_blank">
+          https://embed.ly/bookmarklet&nbsp;<i class="fas fa-external-link-alt">
+          </i></a>に入ります。
+            </p>
+          <p><img src="../img/linkcard1.jpg" alt="linkcard"></p>
+          <p>「＋Embed」というボタンをブックマークにドラック＆ドロップします。
+            すると...なぜかドロップできませんでした...（えっ！）
+            このブラウザはChromeなのですが...。あれ？おかしいなー？
+          </p>
+          <img src="../img/linkcard2.jpg" alt="linkcard">
+          <p>仕方ないのでSafariでやってみることにしました。
+            私は普段からブラウザはChrome一択なので残念ですが...
+            まぁSafariを開くくらいそんなに大変なことでもないし、
+            これを使う時はSafariで対応...ということで妥協することにします。
+          </p>
+          <img src="../img/linkcard3.jpg" alt="linkcard">
+          <p>
+            そしてSafariでは無事に成功！うーん、なんでChromeはダメだったかなー。
+            いつか理由がわかったら報告します！（適当）
+          </p>
+          <p>
+            <img src="../img/linkcard4.jpg" alt="linkcard">
+          </p>
+          <p>
+            まずはカードを作りたいリンク先のページを開きます。
+            そして、その後、先ほどのブックマークをクリックします。
+          </p>
+          <img src="../img/linkcard5.jpg" alt="linkcard">
+          <p>
+            するとこのような画面ででてきます。
+            うん、画像がでか過ぎる！大きい画像のままでも、もちろんいいです。
+            好みの問題だと思います。けど、私はもう少し控えめなサイズが好きなので、
+            左下のここをクリックして画像を縮めることにしました。
+          </p>
+          <img src="../img/linkcard6.jpg" alt="linkcard">
+          <p>これで丁度いいですね！
+            このレイアウトで気に入ったら、この下にでてきたリンクをコピーして、HTMLの
+            リンクカードを挿入したい場所に貼り付けます。</p>
+            <h2>これで完成です！</h2>
+          <p>
+            でも、デフォルトバージョンのリンクカードにはちょっと気に入らない所があります。
+            マウスをこのリンクカードの上に置いた時に、変なSNSアイコンでてくるし、
+            白色が背景と同化してしまうから枠をつけたい...
+            ということで、Googleのデベローパーツールでコード解析をし、
+            少しカスタマイズしました。
+          </p>
+          <hr>
+          </div>
+          <div class="discri-2">
+            <h4> 修正箇所はCSSです。</h4>
+            <pre>
+              <code class="prettyprint lang-css">
+                //枠をつける
+                .embedly-card{
+                    border: 1px solid #555;
+                    border-radius: 8px;
+                  }
+                //SNS アイコンを消す
+                  .embdscl0{
+                    display: none;
+                  }
+            </code>
+            </pre>
+          <p>
+            これで枠がついて、SNSアイコンが消えて私好みのリンクカードになりました。
+            とまぁ今回はEmbedlyでリンクカードを作る方法をまとめましたが、現在、
+            もっといいサービスはないか模索中です。
+            誰かもっといいのがあるよーという人がいればぜひ教えて下さい。
+            よろしくお願いします。
+          </p>
+          <a class="embedly-card" data-card-type="article" href="https://ponsu.tech/blog/link.html">記事にリンクを貼る時、横につけるマークを使いこなそう！</a><script async src="//cdn.embedly.com/widgets/platform.js" charset="UTF-8"></script>
+          </div>
+      </article>
+    </div>
+    <aside class="sidebar">
+      <section>
+        <h2>過去の記事</h2>
+        <ul>
+          <li><a href="#">2019年1月</a></li>
+          <li><a href="#">2019年2月</a></li>
+          <li><a href="#">2019年3月</a></li>
+        </ul>
+      </section>
+      <section>
+        <h2>カテゴリー</h2>
+        <ul>
+          <li><a href="#">カテゴリー1</a></li>
+          <li><a href="#">カテゴリー2</a></li>
+          <li><a href="#">カテゴリー3</a></li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+    <footer>
+      ©Copyright2019<br> <span class="foot"><strong>ponsu.tech</strong></span> All Rights Reserved.
+    </footer>
+    <script>
+      (function(){
+        'use strict';
+        let openMenu = document.getElementById('open_menu');
+        let closeMenu = document.getElementById('close_menu');
+        let menu = document.getElementById('menu');
+        openMenu.addEventListener('click', function(){
+          menu.classList.add('shown')
+        });
+        closeMenu.addEventListener('click', function(){
+          menu.classList.remove('shown')
+        });
+      })();
+    </script>
+    <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5c68353001910e2f"></script>
+</body>
+</html>
