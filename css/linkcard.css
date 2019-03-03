@@ -1,0 +1,333 @@
+/* 冒頭でimport */
+@import url(https://fonts.googleapis.com/earlyaccess/nikukyu.css);
+
+.breadcrumb{
+  list-style: none;
+  padding: 3px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+.breadcrumb a{
+  color: #7c5119;
+  text-decoration: none;
+}
+.breadcrumb a:hover{
+  cursor: pointer;
+  color: blue;
+}
+.breadcrumb li{
+  display: inline-block;
+}
+.breadcrumb li::after{
+  content: ">>";
+  padding: 0 5px;
+  color: #b3b3b3;
+}
+.breadcrumb li:last-child::after{
+  content: none;
+}
+/* ナビメニュー */
+#menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #FFCC00;
+  color: blue;
+  display: none;
+}
+
+#menu.shown{
+  display: block;
+}
+
+#menu ul{
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+#menu li{
+  line-height: 2.5;
+  text-align: left;
+}
+
+#menu a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#open_menu{
+  float: right;
+  font-size: 32px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+#close_menu{
+  font-size: 35px;
+  padding: 15px;
+  float: right;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  font-family: 'HG創英角ポップ体','Arial Rounded MT Bold','Hannotate SC','Comic Sans MS',cursive,fantasy,sans-serif;
+}
+header{
+  background-color: #FFCC00;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  font-family: 'Nikukyu';
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+}
+body{
+  font-size: 15px;
+  font-family: 'HG創英角ポップ体','Arial Rounded MT Bold','Hannotate SC','Comic Sans MS',cursive,fantasy,sans-serif;
+  color: #000;
+  margin-bottom: 0;
+  margin: 0;
+}
+.content{
+  overflow: hidden;
+}
+.main{
+  max-width: 800px;
+  margin: 0 10px;
+  float: left;
+  margin-left: 60px;
+}
+article{
+  margin-bottom: 30px;
+}
+h2{
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+a:hover{
+  color: blue;
+  text-decoration: underline;
+}
+h2 > a{
+  padding: 1px;
+}
+p{
+  margin-bottom: 10px;
+}
+img{
+  max-width: 400px;
+  max-height: 300px;
+  border: 2px solid #000;
+  width: 100%;
+  height: 50%;
+  margin-top: 20px;
+}
+a{
+  padding: 8px;
+  text-decoration: none;
+  color: blue;
+}
+/* リンクカード */
+.embedly-card{
+  border: 1px solid #555;
+  border-radius: 8px;
+}
+.embdscl0{
+  display: none;
+}
+
+.subtitle{
+  display: block;
+  padding-top: 5px;
+  border-top: 1px dashed #3b98b6;
+  font-size: 15px;
+  font-weight: normal;
+  color: #3b98b6;
+}
+p > strong{
+  font-weight: normal;
+  background: linear-gradient(transparent 55%,#fafa00 55%,#fafa00 100%);
+}
+.discri{
+  margin-top: 10px;
+  padding-top: 15px;
+  margin-bottom: 0;
+}
+pre{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #999;
+  overflow: scroll;
+  resize: horizontal;
+  margin-bottom: 50px;
+}
+pre:nth-of-type(6),
+pre:nth-of-type(10){
+  margin-bottom: 0;
+  }
+.color{
+  color: #cc3366;
+}
+span.title-count{
+  background: #222;
+  color: #fff;
+  padding: 5px;
+  line-height: 25px;
+}
+.top{
+  margin-top: 30px;
+}
+.title-min{
+  font-size: 18px;
+  color: red;
+}
+.discri-3{
+  margin-top: 30px;
+}
+<span class="pln">pre </span><span class="pun">{</span><span class="pln">
+    white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span><span class="pln"> pre</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">;</span>         <span class="com">/* CSS3 */</span><span class="pln">
+    white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span> <span class="pun">-</span><span class="pln">moz</span><span class="pun">-</span><span class="pln">pre</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">;</span>    <span class="com">/* Firefox */</span><span class="pln">
+    white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span> <span class="pun">-</span><span class="pln">webkit</span><span class="pun">-</span><span class="pln">pre</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">;</span> <span class="com">/* Chrome, Safari */</span><span class="pln">
+    white</span><span class="pun">-</span><span class="pln">space</span><span class="pun">:</span> <span class="pun">-</span><span class="pln">o</span><span class="pun">-</span><span class="pln">pre</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">;</span>      <span class="com">/* Opera 7 */</span><span class="pln">
+    word</span><span class="pun">-</span><span class="pln">wrap</span><span class="pun">:</span> <span class="kwd">break</span><span class="pun">-</span><span class="pln">word</span><span class="pun">;</span>         <span class="com">/* IE 5.5+ */</span>
+<span class="pun">}</span>
+code {
+  color: #fff;
+  font-size: 14px;
+  font-family: Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+/* サイドバー */
+.sidebar{
+  width: 200px;
+  margin: 0 10px 0 30px;
+  float: right;
+  margin-top: 100px;
+}
+li >a:hover{
+  color: blue;
+}
+footer{
+  background-color: #FFCC00;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 70px;
+  color: #fff;
+  font-family: 'Comic Sans MS','Chalkduster',cursive,fantasy;
+}
+.foot{
+  color: blue;
+}
+
+/* PC画面 */
+@media (min-width: 570px){
+header{
+  line-height: 70px;
+  font-size: 30px;
+  text-align: center;
+}
+.important{
+  position: absolute;
+  top: 0;
+  /* display: inline-block; */
+  padding-left: 30px;
+  padding-right: 20px;
+  text-align: center;
+  width: 100%;
+}
+#open_menu{
+  display: none;
+}
+#close_menu{
+  display: none;
+}
+
+#menu{
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  margin-top: 148px;
+  display: block !important;
+}
+#menu ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0;
+}
+#menu li{
+  width: 120px;
+  padding: 0;
+  line-height: 1.5;
+  color: #7c5119;
+  font-size: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  padding-top: 15px;
+}
+#menu a{
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+}
+#menu li:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+}
+footer{
+  background-color: #FFCC00;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  color: #fff;
+}
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 800px){
+header{
+  width: auto;
+  margin: 0;
+}
+body{
+  font-size: 3.5vw;
+}
+.content{
+  width: 100%;
+}
+.main{
+  float: none;
+  width: auto;
+  margin: 0 5%;
+}
+h1{
+  font-size: 7.2vw;
+}
+h2{
+  font-size: 6vw;
+}
+h2 img{
+  max-width: 100%;
+}
+p{
+  font-size: 4vw;
+}
+.sidebar{
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 30px 20px 20px;
+  background-color: #f7f6f4;
+}
+}
