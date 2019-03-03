@@ -3,6 +3,7 @@
 .embedly-card{
   border: 1px solid #555;
   border-radius: 8px;
+  box-shadow: 2px 2px 20px #333;
 }
 /* iframe{
   border: 1px solid #555;
