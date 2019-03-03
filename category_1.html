@@ -11,15 +11,6 @@
   <link rel="android-touch-icon" type="image/png" href="../img/android-touch-icon.png" sizes="192x192">
   <link rel="stylesheet" href="css/category.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-  $(function(){
-    $(".head0").click(function(){
-      $(".head").slideToggle();
-    });
-  });
-  </script>
 </head>
 <body>
   <header>
@@ -88,12 +79,12 @@
     </a>
   </div>
   <div class="grid-item grid-item--height2">
-    <a href="blog/blog_1.html">
-      <img class="image" src="img/newdog.jpg" alt="dog">
-      <div class="category">記事のタイトル</div>
+    <a href="blog/linkcard.html">
+      <img class="image" src="img/linkcard.jpg" alt="dog">
+      <div class="category">リンクカードの貼り方</div>
       <p class="discription">
-        テキストテキストテキスト
-        テキストテキストテキストテキスト</p>
+        Embedlyというサービスを使って、一瞬でリンクカードを作る方法。
+      </p>
     </a>
   </div>
   <div class="grid-item grid-item--width3">
@@ -253,6 +244,14 @@
   <footer>
     ©Copyright2019<br> <span class="foot"><strong>ponsu.tech</strong></span> All Rights Reserved.
   </footer>
-
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $(".head0").click(function(){
+      $(".head").slideToggle();
+    });
+  });
+  </script>
 </body>
 </html>
