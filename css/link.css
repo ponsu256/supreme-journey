@@ -66,13 +66,8 @@ a:hover{
   border: 1px solid #555;
   border-radius: 8px;
 }
-.embedly-card:hover{
-  opacity: 0.8;
-  cursor: pointer;
-  box-shadow: 2px 2px 20px #333;
-}
-iframe{
-  height: 200px;
+.embdscl0{
+  display: none;
 }
 
 h2 > a{
@@ -223,9 +218,7 @@ h2{
 h2 img{
   max-width: 100%;
 }
-  iframe{
-  height: 350px;
-}
+ 
 .sidebar{
   float: none;
   width: auto;
